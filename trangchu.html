@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <div class="menu">
+            <li> 
+                <a href="">NỮ</a> 
+                <ul class="sub-menu">   
+                    <li><a style="font-weight: bold" href="">Hàng mới về</a></li>
+                    <li><a style="font-weight: bold" href="">Colection</a></li>
+                    <li><a style="font-weight: bold" href="">Áo</a>
+                        <ul>
+                            <li><a href="">Áo sơ mi</a></li>
+                            <li><a href="">Áo thun</a></li>
+                            <li><a href="">Áo vest</a></li>
+                            <li><a href="">Áo khoác</a></li>
+                        </ul>
+                    </li>
+                    <li><a style="font-weight: bold" href="">Quần</a>
+                        <ul>
+                            <li><a href="">Quần jean</a></li>
+                            <li><a href="">Quần lửng</a></li>
+                            <li><a href="">Quần dài</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </li>
+            <li> <a href="">NAM</a> </li>
+            <li> <a href="">TRẺ EM</a> </li>
+            <li> <a href="">GIÁ CUỐI TỪ 99K</a> </li>
+            <li> <a href="">BỘ SƯU TẬP</a> </li>
+            <li> <a href="">LIFESTYLE</a> </li>
+            <li> <a href="">VỀ CHÚNG TÔI</a> </li>
+        </div>
+        <div class="logo">
+            <img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" alt="ảnh lỗi"/>
+        </div>
+        <div class="orthers">
+            <li><input type="text" placeholder="Tìm kiếm sản phẩm"> <i class="fas fa-search"></i></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href=""></a></li>
+        </div>
+    </header>
+
+    <section>
+        <div class="aspect-ratio-169">
+            <img src="https://pubcdn.ivymoda.com/files/news/2023/03/20/99081d779a7f7cab71eead17a00494b6.jpg" alt="">
+            <img src="https://pubcdn.ivymoda.com/files/news/2023/03/20/ebcda271b884a7994e3660ed4f8d13c2.jpg" alt="">
+            <img src="https://pubcdn.ivymoda.com/files/news/2023/03/06/63de1b697d785a9f15c3bef27024e165.jpg" alt="">
+        </div>
+        <div class="dot-container">
+            <div class='dot active'></div>
+            <div class='dot'></div>
+            <div class='dot'></div>
+        </div>
+    </section>
+</body>
+<!-- --------------app-container------------------>
+<section class="app-container">
+    <p>Tải ứng dụng IVYmoda</p>
+    <div class="app-google">
+        <a href="https://apps.apple.com/app/id1430094474?fbclid=IwAR3xAzj-xTmtj35aQUB8KhTLk1zFgyw2zssisSyn9qkRA6w4fgt6kI7j8Q8"><img src="https://pubcdn.ivymoda.com/ivy2/images/appstore.png" alt=""></a>
+        <a href="https://play.google.com/store/apps/details?id=com.ivymoda.app&fbclid=IwAR2Ki0MhC0MdCSEqmnP9BUNLhKg7ZresCBqA8BfRkPBBswJ99-YNqOX4cL8&pli=1"><img src="https://pubcdn.ivymoda.com/ivy2/images/googleplay.png" alt=""></a> 
+    </div>
+    <p>Nhận bản tin Ivymoda</p>
+    <div class="email-container">
+        <form action="action">
+            <input class="imp-email" type="text" placeholder="Nhập email của bạn" >
+            <input class="send-email" type="submit" name="sub-email">
+        </form>
+    </div>
+</section>
+<!-- --------------footer------------------>
+<div class="footer-top">
+    <li><a href="index.html"><img src="https://pubcdn.ivymoda.com/ivy2/images/logo-footer.png" alt=""></a></li>
+    <li><a href="http://online.gov.vn/Home/WebDetails/36596"><img src="https://pubcdn.ivymoda.com/ivy2/images/img-congthuong.png" alt=""></a></li>
+    <li><a href="">Liên hệ</a></li>
+    <li><a href="">Tuyển dụng</a></li>
+    <li><a href="">Giới thiệu</a></li>
+    <li>
+        <a href="" class="fab fa-facebook"></a>
+        <a href="" class="fab fa-twitter"></a>
+        <a href="" class="fab fa-youtube"></a>
+    </li>
+</div>
+<div class="footer-center">
+    <p>Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650</p>
+    <p> <b>Địa chỉ đăng ký:</b>  Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam</p>
+    <p> <b> Số điện thoại:</b> 0243 205 2222/ 090 589 8683</p>
+    <p> <b>Email:</b>  cskh@ivy.com.vn</p>
+</div>
+<div class="footer-bottom">
+    ©IVYmoda All rights reserved
+</div>
+<!-- Chuyển giữa các Slider tự động và khi nhấn vào sẽ chuyển sang slider khác -->
+<script id="Slider">
+     
+    const imgPosittion = document.querySelectorAll(".aspect-ratio-169 img")
+    const imgContainer = document.querySelector(".aspect-ratio-169")
+    const dotItem = document.querySelectorAll(".dot")
+    // console.log(imgPosittion)
+    let imgNumber = imgPosittion.length
+    let index = 0;
+    imgPosittion.forEach(function(image,index){
+        image.style.left = index*100 + "%"; 
+        dotItem[index].addEventListener("click",function(){
+            slider(index)
+        })
+    })
+    function imgSlide(){
+        index++;
+        if(index>=imgNumber){
+            index = 0;
+        }
+        slider(index)
+    }
+    function slider(index){
+        imgContainer.style.left = "-" + index*100 + "%"
+        const dotActive = document.querySelector(".active")
+        dotActive.classList.remove('active')
+        dotItem[index].classList.add("active")
+
+    }
+    setInterval(imgSlide,5000)
+</script>
+<!-- Scroll thanh meunu thì đổi màu (Hiện đang lỗi) -->
+<script>
+    window.addEventListener('scroll', function() {
+      var header = document.querySelector('.header');
+      var scrollPosition = window.pageXOffset;
+      if (scrollPosition > 100) {
+        header.classList.add('sticky');
+      } else {
+        header.classList.remove('sticky');
+      }
+    });
+  </script>
+
+</html>
