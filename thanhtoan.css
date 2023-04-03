@@ -216,3 +216,172 @@ footer{
 .footer-center{
     text-align: center;
 }
+
+.thanhtoan
+{
+    padding: 100px 0;
+}
+.thanhtoan-top-wrap
+{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.thanhtoan-top
+{
+    height: 2px;
+    width: 70%;
+    background-color: #dddddd;
+    display: flex ;
+    justify-content: space-between;
+    align-items: center;
+    margin: 50px 0 100px;
+}
+.thanhtoan-top-item
+{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    border: 1px solid #dddddd;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #fff;
+}
+.thanhtoan-top-item i{
+    color: #dddddd;
+}
+.thanhtoan-top-adress
+{
+    border: 1px solid #0DB7EA ;
+}
+.thanhtoan-top-adress i{
+    color: #0DB7EA;
+}
+.thanhtoan-content-left
+{
+    width: 60%;
+    padding-right: 16px;
+    float: left;
+}
+.thanhtoan-content-left p{
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+.thanhtoan-content-left label{
+    font-family: "Times New Roman";
+    font-size: 16px;
+    margin-bottom: 6px;
+    display: block;
+}
+.thanhtoan-content-left> p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.thanhtoan-content-left-dangnhap
+{
+    margin-top: 16px;
+}
+.thanhtoan-content-left-dangnhap i{
+    font-size: 16px;
+    margin-right: 16px;
+}
+.thanhtoan-content-left-khachle
+{
+    margin: 16px 0;
+}
+.thanhtoan-content-left-khachle input
+{
+    margin-right: 16px;
+}
+.thanhtoan-content-left-dangky
+{
+    margin-bottom: 34px;
+}
+.thanhtoan-content-left-dangky input
+{
+    margin-right: 16px;
+}
+.thanhtoan-content-left-input-top
+{
+    justify-content: space-between;
+}
+.thanhtoan-content-left-input-top-item
+{
+    width: calc(50%- 20px);
+}
+.thanhtoan-content-left-input-top-item input
+{
+    width: 100%;
+    height: 35px;
+    border: 1px solid #dddddd;
+    padding-left: 6px;
+}
+.thanhtoan-content-left-button p{
+    display: inline-block;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+.thanhtoan-content-left-button span{
+    margin-right: 16px;
+}
+.thanhtoan-content-left-button
+{
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.thanhtoan-content-left-button button
+{
+    height: 35px;
+    border: 2px solid black;
+    padding: 6px 12px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+}
+.thanhtoan-content-left-button button:hover
+{
+    background-color: black;
+    color: #ffffff;
+}
+.thanhtoan-content-right
+{
+    width: 40%;
+    padding-left: 12px;
+    border-left: 2px solid #dddddd;
+    height: auto;
+    float: right;
+}
+.thanhtoan-content-right table{
+    width: 100%;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    text-align: center;
+}
+.thanhtoan-content-right table tr th:first-child
+{
+    text-align: left;
+}
+.thanhtoan-content-right table tr th{
+    padding-bottom: 16px;
+    border-bottom: 2px solid #dddddd;
+}
+.thanhtoan-content-right tablt tr th:last-child
+{
+    text-align: right;
+}
+.thanhtoan-content-right table tr td{
+    padding: 6px 0;
+}
+.thanhtoan-content-right table tr:nth-child(4)
+{
+    border-top: 2px solid #dddddd;
+}
+.thanhtoan-content-right table tr td:last-child
+{
+    text-align: right;
+}
+.thanhtoan-content-right table tr td:first-child
+{
+    text-align: left;
+}
+
