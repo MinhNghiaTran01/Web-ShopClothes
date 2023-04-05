@@ -9,13 +9,13 @@ li{
 }
 a{
     text-decoration: none;
-    color: #220529;
+    color: #212529;
 }
 header{
     width: 100%     ;
     display: flex;
     justify-content: space-between;
-    padding: 20px 50px;
+    padding: 12px 50px;
     height: 70px;
     align-items: center;
     position: fixed;
@@ -40,7 +40,7 @@ header:hover{
     display: flex;
 }
 .menu li{
-    margin: 0px 20px 0px 0px;
+    margin: 0px 12px 0px 0px;
     padding: 15px 4px;
     position: relative;
 }
@@ -73,7 +73,7 @@ header:hover{
     display: flex;
 }
 .orthers > li{
-    padding: 0px 20px;
+    padding: 0px 12px;
 }
 .orthers > li:first-child{
     position: relative;
@@ -100,16 +100,16 @@ header:hover{
     left: 10px ;
 }
 .orthers > li:not(:first-child) {
-    padding: 20px 20px 0px 0px;
+    padding: 12px 12px 0px 0px;
 }
 
-.aspect-ratio-209 {
+.aspect-ratio-169 {
     display: block;
     position: relative;
     padding-top: 56.25%;
 }
 
-.aspect-ratio-209 img  {
+.aspect-ratio-169 img  {
     display: block;
     position: absolute;
     width: 100%;
@@ -130,7 +130,7 @@ header:hover{
     width: 18px;
     background-color: #ccc;
     border-radius: 50%;
-    margin-left: 20px;
+    margin-left: 12px;
     cursor: pointer;
 }
 .dot.active{
@@ -192,7 +192,7 @@ footer{
     height: 50px;
 }
 .footer-top li{
-    padding: 0 20px;
+    padding: 0 12px;
     position: relative;
 }
 .footer-top li::after{
@@ -216,27 +216,28 @@ footer{
 .footer-center{
     text-align: center;
 }
-.payment
+
+.thanhtoan
 {
     padding: 100px 0;
 }
-.payment-top-wrap
+.thanhtoan-top-wrap
 {
     display: flex;
     justify-content: center;
     align-items: center;
 }
-.payment-top
+.thanhtoan-top
 {
     height: 2px;
     width: 70%;
     background-color: #dddddd;
-    display: flex;
+    display: flex ;
     justify-content: space-between;
     align-items: center;
     margin: 50px 0 100px;
 }
-.payment-top-item
+.thanhtoan-top-item
 {
     width: 40px;
     height: 40px;
@@ -245,86 +246,143 @@ footer{
     display: flex;
     align-items: center;
     justify-content: center;
-    background-color: #ffffff;
+    background: #fff;
 }
-.payment-top-item i{
+.thanhtoan-top-item i{
     color: #dddddd;
 }
-.payment-top-payment
+.thanhtoan-top-adress
 {
-    border: 1px solid #0DB7EA;
+    border: 1px solid #0DB7EA ;
 }
-.payment-top-payment i
-{
+.thanhtoan-top-adress i{
     color: #0DB7EA;
 }
-.payment-content-left
+.thanhtoan-content-left
 {
     width: 60%;
+    padding-right: 16px;
+    float: left;
 }
-.payment-content-right
-{
-    width: 40%;
-    border-left: 2px solid #dddddd;
-    padding-left: 20px;
-    float: right;
-}
-.payment-content-left p,label
-{
-    font-size: 20px;
+.thanhtoan-content-left p{
     font-family: "Times New Roman";
+    font-size: 16px;
 }
-.payment-content-right-button
+.thanhtoan-content-left label{
+    font-family: "Times New Roman";
+    font-size: 16px;
+    margin-bottom: 6px;
+    display: block;
+
+}
+.thanhtoan-content-left> p{
+    font-weight: bold;
+    font-size: 16px;
+}
+.thanhtoan-content-left-dangnhap
 {
-    display: flex;
-    padding: 20px 0;
-    border-bottom: 1px dashed #dddddd;
+    margin-top: 16px;
 }
-.payment-content-right-button input
+.thanhtoan-content-left-dangnhap i{
+    font-size: 16px;
+    margin-right: 16px;
+}
+.thanhtoan-content-left-khachle
 {
-    height: 30px;
-    width: 200px;
-    margin-right: 100px;
-    padding-left: 20px;
+    margin: 16px 0;
 }
-.payment-content-right-button button
+.thanhtoan-content-left-khachle input
 {
-    height: 30px;
-    width: 100px;
-    background-color: black;
-    color: white;
-    border: none;
-    cursor: pointer;
+    margin-right: 16px;
 }
-.payment-content-right-mnv
+.thanhtoan-content-left-dangky
 {
-    margin-top: 20px;
+    margin-bottom: 34px;
 }
-.payment-content-right-mnv select
+.thanhtoan-content-left-dangky input
 {
-    height: 30px;
-    width: 100%;
-    color: #75758A;
-    padding-left: 20px;
+    margin-right: 16px;
 }
-.payment-content-right-payment
+.thanhtoan-content-left-input-top
 {
-    margin-top: 50px;
-    align-items: center;
-    text-align: center;
+    justify-content: space-between;
 }
-.payment-content-right-payment button
+.thanhtoan-content-left-input-top-item
+{
+    width: calc(50%- 20px);
+}
+.thanhtoan-content-left-input-top-item input
+{
+    width: 90%;
+    height: 35px;
+    border: 1px solid #dddddd;
+    padding-left: 10px;
+}
+.thanhtoan-content-left-button p{
+    display: inline-block;
+    font-family: "Times New Roman";
+    font-size: 16px;
+}
+.thanhtoan-content-left-button span{
+    margin-right: 16px;
+}
+.thanhtoan-content-left-button
+{
+    justify-content: space-between;
+    padding-top: 20px;
+}
+.thanhtoan-content-left-button button
 {
     height: 35px;
-    padding: 0 20px;
-    font-size: 20px;
-    color: black;
+    border: 2px solid black;
+    padding: 6px 12px;
     cursor: pointer;
     transition: all 0.3s ease;
-    border: 2px solid black ;
 }
-.payment-content-right-payment button:hover
+.thanhtoan-content-left-button button:hover
 {
     background-color: black;
     color: #ffffff;
 }
+.thanhtoan-content-right
+{
+    width: 40%;
+    padding-left: 12px;
+    border-left: 2px solid #dddddd;
+    height: auto;
+    float: right;
+}
+.thanhtoan-content-right table{
+    width: 100%;
+    font-family: "Times New Roman";
+    font-size: 16px;
+    text-align: center;
+}
+.thanhtoan-content-right table tr th:first-child
+{
+    text-align: left;
+}
+.thanhtoan-content-right table tr th{
+    padding-bottom: 16px;
+    border-bottom: 2px solid #dddddd;
+}
+.thanhtoan-content-right tablt tr th:last-child
+{
+    text-align: right;
+}
+.thanhtoan-content-right table tr td{
+    padding: 6px 0;
+}
+.thanhtoan-content-right table tr:nth-child(4)
+{
+    border-top: 2px solid #dddddd;
+}
+.thanhtoan-content-right table tr td:last-child
+{
+    text-align: right;
+}
+.thanhtoan-content-right table tr td:first-child
+{
+    text-align: left;
+}
+
