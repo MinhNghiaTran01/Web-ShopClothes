@@ -112,6 +112,23 @@ public class DAO {
         return sp;
     }
     
+    public List<GioHang> getProductBysdtKhachHang(String sdtKhachHang){
+        List<GioHang>  list = new ArrayList<>();
+        try {
+            String query = "select * from giohang " + " where soDienThoaiKhachHang = ? ";
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, sdtKhachHang);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                list.add(  new GioHang( rs.getString(1), rs.getString(2), rs.getString(3) ) );
+            }
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return list;
+    }
+    
     public List<ProductImage> getProductImageByID(String idSanPham){
         List<ProductImage> list = new ArrayList<>();
         try {
@@ -145,6 +162,21 @@ public class DAO {
             System.out.println(e);
         }
         return list;
+    }
+    
+    public void InsertGioHangByID (String soDienThoaiKhachHang,String idSanPham,int soLuong){
+        List<GioHang> list = new ArrayList<>();
+        try {
+            String query = "insert into GioHang " + " values(?,?,?) ";
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, soDienThoaiKhachHang);
+            ps.setString(2, idSanPham);
+            ps.setInt(3, soLuong);
+            ps.executeUpdate();
+        } catch (Exception e) {
+            System.out.println(e);
+        }
     }
     
     public Account getAccountByUserName(String username,String pass){

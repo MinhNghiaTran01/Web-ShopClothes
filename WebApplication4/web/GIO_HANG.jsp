@@ -15,7 +15,6 @@
         <link rel="stylesheet" href="./GIO_HANG.css">
     </head>
     <body>
-        <c:set var=""
         <section class="cart">
           <div class="container">
             <div class="cart-top-wrap">
@@ -45,24 +44,17 @@
                     <th>Thành tiền</th>
                     <th>Xóa</th>
                   </tr>
-                  <tr>
-                    <td><img src="https://cf.shopee.vn/file/a1e820b76cc47ad7d074413e65c8d983" alt=""></td>
-                    <td><p>Quần sooc bò đen MS 23E2626</p></td>
-                    <td><img src="https://shop.dazlinn.com/wp-content/uploads/2022/08/qu-n-short-jean-n-lung-cao-ng-r-ng-qu-n-sooc-bo-denim-n-co-chun-sau-c-p.jpg" alt=""></td>
-                    <td><p>L</p></td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td><p>489.000 <sub>đ</sub></p></td>
-                    <td><span>X</span></td>
-                  </tr>
-                  <tr>
-                    <td><img src="https://pubcdn.ivymoda.com/files/product/thumab/1280/2023/03/20/a2aa84aaa5f721e8e19bd5c518d77062.jpg" alt=""></td>
-                    <td><p>ĐẦM CHIFFON CỔ V</p></td>
-                    <td><img src="https://pubcdn.ivymoda.com/files/product/thumab/1280/2023/03/20/a2aa84aaa5f721e8e19bd5c518d77062.jpg" alt=""></td>
-                    <td><p>L</p></td>
-                    <td><input type="number" value="1" min="1"></td>
-                    <td><p>1.080.000 <sub>đ</sub></p></td>
-                    <td><span>X</span></td>
-                  </tr>
+                  <c:forEach var="o" items="${listP}" >
+                    <tr>
+                      <td><img src="${o.img}" alt=""></td>
+                      <td><p>Quần sooc bò đen MS 23E2626</p></td>
+                      <td><img src="${o.mauSac}" alt=""></td>
+                      <td><p>L</p></td>
+                      <td><input type="number" value="1" min="1"></td>
+                      <td><p>489.000 <sub>đ</sub></p></td>
+                      <td><span>X</span></td>
+                    </tr>
+                  </c:forEach>
                 </table>
               </div>
               <div class="cart-content-right">
@@ -75,7 +67,7 @@
                     <td>2</td>
                   </tr>
                   <tr>
-                    <td>TỔNG TIỀN HÀNG</td>
+                    <td>TỔNG TIiỀN HÀNG</td>
                     <td><p>489.000 <sub>đ</sub></p></td>
                   </tr>
                   <tr>

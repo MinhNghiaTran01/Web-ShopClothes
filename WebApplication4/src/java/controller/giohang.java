@@ -7,6 +7,7 @@ package controller;
 
 import dao.DAO;
 import entity.DanhMucSanPham;
+import entity.GioHang;
 import entity.SanPham;
 import java.io.IOException;
 import java.io.PrintWriter;
@@ -16,6 +17,7 @@ import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -35,12 +37,13 @@ public class giohang extends HttpServlet {
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
-        String idSanPham =  request.getParameter("idSanPham");
+        HttpSession session = request.getSession();
+        String sdtKhachHang = (String) session.getAttribute("user");
         
         
         DAO DAO = new DAO();
         
-        SanPham sp = DAO.getProductByID(idSanPham);
+        List<GioHang> list = DAO.getProductBysdtKhachHang(sdtKhachHang);
 
         List<DanhMucSanPham> list_menu_nu = DAO.getAllDanhMucSanPham();
         List<DanhMucSanPham> list_menu_nam = DAO.getAllDanhMucSanPham();
@@ -51,7 +54,7 @@ public class giohang extends HttpServlet {
         request.setAttribute("listPTreEm", list_menu_treEm);
         request.setAttribute("listPboSuuTap", list_menu_boSuuTap);
         
-        request.setAttribute("SANPHAM", sp);
+        request.setAttribute("listP", list);
         request.getRequestDispatcher("GIO_HANG.jsp").forward(request, response);
         
         

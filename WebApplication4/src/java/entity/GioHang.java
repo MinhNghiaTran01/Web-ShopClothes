@@ -10,7 +10,7 @@ package entity;
  */
 public class GioHang {
     private String soDienThoaiKhachHang,idSanPham,soLuong;
-
+    
     public GioHang() {
     }
 

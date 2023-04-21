@@ -112,7 +112,7 @@
                                         <a href="detail?idSanPham=${o.idSanPham}"><img src="${o.img}" alt=""></a>
                                         <a href="detail?idSanPham=${o.idSanPham}"><h2>${o.title}</h2></a>
                                         <p>${o.giaBan}<sup>đ</sup></p>
-                                        <a href="giohang?idSanPham=${o.idSanPham}">gio hàng</a>
+                                        <a href="giohang?idSanPham=${o.idSanPham}">thêm vào giỏ hàng</a>
                                     </div>
                                 </c:forEach>
                             </div>

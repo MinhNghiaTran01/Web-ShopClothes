@@ -6,7 +6,6 @@
 package controller;
 
 import dao.DAO;
-import entity.Account;
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -21,8 +20,8 @@ import javax.servlet.http.HttpSession;
  *
  * @author Admin
  */
-@WebServlet(name="login", urlPatterns={"/login"})
-public class login extends HttpServlet {
+@WebServlet(name="themvaogiohang", urlPatterns={"/themvaogiohang"})
+public class themvaogiohang extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -34,37 +33,32 @@ public class login extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String user = request.getParameter("user");
-        String pass = request.getParameter("pass");
-        String rem =  request.getParameter("rem");
-        
+        HttpSession session = request.getSession();
+        String idSanPham = request.getParameter("idSanPham");
+        String soLuong = request.getParameter("soLuong");
+        String sdtKhachHang = (String) session.getAttribute("user");
         DAO DAO = new DAO();
-            Account acc = DAO.getAccountByUserName(user,pass);
-            if(acc.getIdAccount()!=null)
-            {
-                Cookie cuser = new Cookie("cuser", user);
-                Cookie cpass = new Cookie("cpass", pass);
-                Cookie crem = new Cookie("crem", rem);
-                if(crem!=null){
-                    cuser.setMaxAge(24*60*60);
-                    cpass.setMaxAge(24*60*60);
-                    crem.setMaxAge(24*60*60);
+        if(sdtKhachHang!=null){
+            DAO.InsertGioHangByID( sdtKhachHang, idSanPham,Integer.parseInt(soLuong) );
+        }
+        else{
+            Cookie[] carr = request.getCookies();
+            String txt = "";
+            if(carr!=null){
+                for(Cookie o : carr){
+                    if(o.getName().equals("cart")){
+                        txt += o.getValue();
+                        o.setMaxAge(0);
+                        response.addCookie(o);
+                    }
                 }
-                else{
-                    cuser.setMaxAge(0);
-                    cpass.setMaxAge(0);
-                    crem.setMaxAge(0);
-                }
-                response.addCookie(cuser);
-                response.addCookie(cpass);
-                response.addCookie(crem);
-                HttpSession session = request.getSession();
-                session.setAttribute("user", acc.getUsename());
-                session.setAttribute("pass", acc.getPassword());
-                response.sendRedirect("menuServlet");
             }
-       
-        
+            else{
+                txt+= idSanPham + ":" + soLuong;
+            }
+            Cookie c = new Cookie("cart", txt);
+            response.addCookie(c);
+        }
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

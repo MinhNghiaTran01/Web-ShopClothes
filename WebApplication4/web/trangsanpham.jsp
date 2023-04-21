@@ -24,7 +24,7 @@
     <!-------------------------product------------------------->
     <c:set var="o" value="${requestScope.detailP}" />
     <c:set var="list" value="${requestScope.listPimg}" />
-    
+    <form name="f" action="" method="post">
         <section class="product">
                 <div class="container">
                         <div class="product-top">
@@ -70,11 +70,11 @@
                             </div>
                             <div class="quantily">
                               <p style="font-weight: bold;">Số lượng: </p>
-                              <input type="number" min="0" value="1">
+                              <input type="number" name="soLuong" min="0" value="1">
                             </div>
                             <p style="color:red;">Vui lòng chọn size</p>
                             <div class="product-content-right-product-button">
-                              <button><i class="fas fa-shopping-cart"></i><p>MUA HÀNG</p></button>
+                                <button onclick=buy(${o.idSanPham}) ><i class="fas fa-shopping-cart"></i><p>MUA HÀNG</p></button>
                               <button><p>TÌM TẠI CỬA HÀNG</p></button>
                             </div>
                             <div class="product-content-right-product-icon">
@@ -97,8 +97,15 @@
                     
                 </div>
       </section>
-  
+    </form>
     <!-- --------------footer------------------>
     <%@include file="footer.jsp" %>
     </body>
+    <script>
+        function buy(idSanPham){
+            var soLuong = document.f.soLuong.value;
+            document.f.action = "buy?idsanPham = " + idSanPham + "&soLuong = " + soLuong;
+            document.f.submit();
+        }
+    </script>
 </html>
