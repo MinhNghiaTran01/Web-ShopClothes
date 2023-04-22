@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project-private xmlns="http://www.netbeans.org/ns/project-private/1">
+    <editor-bookmarks xmlns="http://www.netbeans.org/ns/editor-bookmarks/2" lastBookmarkId="0"/>
+    <open-files xmlns="http://www.netbeans.org/ns/projectui-open-files/2">
+        <group>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/header.css</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/entity/KhachHang.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/thanhToan.css</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/success.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/controller/menuServlet.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/GIAO_HANG.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/thanhToan.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/GIAO_HANG.css</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/controller/login.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/controller/register.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/trangchu.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/register.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/trangchu.css</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/footer.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/entity/SanPham.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/controller/detailServlet.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/giaodientrangmucsp.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/login.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/context/DBContext.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/GIO_HANG.css</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/controller/customer.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/giaodientrangmucsp.css</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/entity/Account.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/entity/KichCo.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/entity/DanhMucSanPham.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/GIO_HANG.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/trangsanpham.css</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/entity/GioHang.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/trangsanpham.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/controller/giohang.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/dao/DAO.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/META-INF/context.xml</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/controller/category.java</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/header.jsp</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/web/WEB-INF/web.xml</file>
+            <file>file:/C:/Users/Admin/Documents/NetBeansProjects/WebApplication4/src/java/entity/ProductImage.java</file>
+        </group>
+    </open-files>
+</project-private>

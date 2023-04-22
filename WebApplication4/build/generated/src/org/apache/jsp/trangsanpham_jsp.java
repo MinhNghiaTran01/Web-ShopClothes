@@ -1,0 +1,1047 @@
+package org.apache.jsp;
+
+import javax.servlet.*;
+import javax.servlet.http.*;
+import javax.servlet.jsp.*;
+
+public final class trangsanpham_jsp extends org.apache.jasper.runtime.HttpJspBase
+    implements org.apache.jasper.runtime.JspSourceDependent {
+
+  private static final JspFactory _jspxFactory = JspFactory.getDefaultFactory();
+
+  private static java.util.List<String> _jspx_dependants;
+
+  static {
+    _jspx_dependants = new java.util.ArrayList<String>(2);
+    _jspx_dependants.add("/header.jsp");
+    _jspx_dependants.add("/footer.jsp");
+  }
+
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_set_var_value_nobody;
+  private org.apache.jasper.runtime.TagHandlerPool _jspx_tagPool_c_forEach_var_items_end_begin;
+
+  private org.glassfish.jsp.api.ResourceInjector _jspx_resourceInjector;
+
+  public java.util.List<String> getDependants() {
+    return _jspx_dependants;
+  }
+
+  public void _jspInit() {
+    _jspx_tagPool_c_set_var_value_nobody = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+    _jspx_tagPool_c_forEach_var_items_end_begin = org.apache.jasper.runtime.TagHandlerPool.getTagHandlerPool(getServletConfig());
+  }
+
+  public void _jspDestroy() {
+    _jspx_tagPool_c_set_var_value_nobody.release();
+    _jspx_tagPool_c_forEach_var_items_end_begin.release();
+  }
+
+  public void _jspService(HttpServletRequest request, HttpServletResponse response)
+        throws java.io.IOException, ServletException {
+
+    PageContext pageContext = null;
+    HttpSession session = null;
+    ServletContext application = null;
+    ServletConfig config = null;
+    JspWriter out = null;
+    Object page = this;
+    JspWriter _jspx_out = null;
+    PageContext _jspx_page_context = null;
+
+    try {
+      response.setContentType("text/html;charset=UTF-8");
+      pageContext = _jspxFactory.getPageContext(this, request, response,
+      			null, true, 8192, true);
+      _jspx_page_context = pageContext;
+      application = pageContext.getServletContext();
+      config = pageContext.getServletConfig();
+      session = pageContext.getSession();
+      out = pageContext.getOut();
+      _jspx_out = out;
+      _jspx_resourceInjector = (org.glassfish.jsp.api.ResourceInjector) application.getAttribute("com.sun.appserv.jsp.resource.injector");
+
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("        <script src=\"https://kit.fontawesome.com/1147679ae7.js\" crossorigin=\"anonymous\"></script>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"./trangsanpham.css\">\n");
+      out.write("    </head>\n");
+      out.write("    \n");
+      out.write("    <!--header-->\n");
+      out.write("    ");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"header.css\"/>\n");
+      out.write("        <script src=\"https://kit.fontawesome.com/1147679ae7.js\" crossorigin=\"anonymous\"></script>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"trangchu.css\">\n");
+      out.write("        <style>\n");
+      out.write("            header{\n");
+      out.write("                font-size: 14px;\n");
+      out.write("            }\n");
+      out.write("            .menu > li:hover .sub-menu_treEm{\n");
+      out.write("            display: flex;\n");
+      out.write("            }\n");
+      out.write("            .sub-menu_treEm{\n");
+      out.write("            display: none;\n");
+      out.write("            line-height: 5px;\n");
+      out.write("            position: absolute;\n");
+      out.write("            width: 1200px;\n");
+      out.write("            border: 1px solid #ccc;\n");
+      out.write("            padding: 10px 0 10px 20px;\n");
+      out.write("            z-index: 1;\n");
+      out.write("            background: #fff;\n");
+      out.write("            }\n");
+      out.write("            \n");
+      out.write("            .menu > li:hover .sub-menu_boSuuTap{\n");
+      out.write("                display: flex;\n");
+      out.write("            }\n");
+      out.write("            .sub-menu_boSuuTap{\n");
+      out.write("            display: none;\n");
+      out.write("            line-height: 5px;\n");
+      out.write("            position: absolute;\n");
+      out.write("            width: 1000px;\n");
+      out.write("            border: 1px solid #ccc;\n");
+      out.write("            padding: 10px 0 10px 20px;\n");
+      out.write("            z-index: 1;\n");
+      out.write("            background: #fff;\n");
+      out.write("            }\n");
+      out.write("        </style>\n");
+      out.write("    </head>\n");
+      out.write("    <header>\n");
+      out.write("        <div class=\"menu\">\n");
+      out.write("            <li> \n");
+      out.write("                <a href=\"\">NỮ</a> \n");
+      out.write("                <ul class=\"sub-menu_nu\">   \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Hàng mới về</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Colection</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">SALE GIẢI NHIỆT</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">IVY you</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Bloomtime</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">TIMELESS</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Áo dài Tết</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Merino Wool</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Quà tặng tháng 3</a></li>\n");
+      out.write("                    </ul>\n");
+      out.write("                        <ul>\n");
+      out.write("                            <li><a style=\"font-weight: bold\" href=\"\">Áo</a>\n");
+      out.write("                                ");
+      if (_jspx_meth_c_forEach_0(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                        </ul>\n");
+      out.write("                    \n");
+      out.write("                        <ul>\n");
+      out.write("                            <li><a style=\"font-weight: bold\" href=\"\">Áo Khoác</a>\n");
+      out.write("                                ");
+      if (_jspx_meth_c_forEach_1(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                        </ul>\n");
+      out.write("                    \n");
+      out.write("                        <ul>\n");
+      out.write("                            <li><a style=\"font-weight: bold\" href=\"\">Quần</a>\n");
+      out.write("                                ");
+      if (_jspx_meth_c_forEach_2(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                        </ul>\n");
+      out.write("                        \n");
+      out.write("                        <ul>\n");
+      out.write("                            <li><a style=\"font-weight: bold\" href=\"\">Chân váy</a>\n");
+      out.write("                                ");
+      if (_jspx_meth_c_forEach_3(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                        </ul>\n");
+      out.write("                        \n");
+      out.write("                        <ul>\n");
+      out.write("                            <li><a style=\"font-weight: bold\" href=\"\">Đầm</a>\n");
+      out.write("                                ");
+      if (_jspx_meth_c_forEach_4(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                        </ul>\n");
+      out.write("                    '   \n");
+      out.write("                    \n");
+      out.write("                </ul>\n");
+      out.write("            </li>\n");
+      out.write("            \n");
+      out.write("            <li> \n");
+      out.write("                <a href=\"\">NAM</a> \n");
+      out.write("                <ul class=\"sub-menu_nam\">   \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">METAGENT</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Essential Sweatsuit Men</a></li>\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Áo</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_5(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Quần</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_6(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">GIÀY & DÉP</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_7(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">PHỤ KIỆN</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_8(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                </ul>\n");
+      out.write("            </li>\n");
+      out.write("            \n");
+      out.write("            <li> \n");
+      out.write("                <a href=\"\">TRẺ EM</a> \n");
+      out.write("                <ul class=\"sub-menu_treEm\">   \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Cotton kháng khuẩn</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Hàng mới về</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Fashion Show SS 2022</a></li>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">Adorable Sweatsuit</a></li>\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">BÉ GÁI</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_9(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">BÉ TRAI</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_10(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                </ul>\n");
+      out.write("            </li>\n");
+      out.write("            \n");
+      out.write("            <li> <a href=\"\">GIÁ CUỐI TỪ 99K</a> </li>\n");
+      out.write("            \n");
+      out.write("            <li> \n");
+      out.write("                <a href=\"\">BỘ SƯU TẬP</a> \n");
+      out.write("                <ul class=\"sub-menu_boSuuTap\">   \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">NỮ</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_11(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">NAM</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_12(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                    \n");
+      out.write("                    <ul>\n");
+      out.write("                        <li><a style=\"font-weight: bold\" href=\"\">TRẺ EM</a>\n");
+      out.write("                        ");
+      if (_jspx_meth_c_forEach_13(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("                    </ul>\n");
+      out.write("                </ul>\n");
+      out.write("            </li>\n");
+      out.write("            <li> <a href=\"\">LIFESTYLE</a> </li>\n");
+      out.write("            <li> <a href=\"\">VỀ CHÚNG TÔI</a> </li>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"logo\">\n");
+      out.write("            <img src=\"https://pubcdn.ivymoda.com/ivy2/images/logo.png\" alt=\"ảnh lỗi\"/>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"orthers\">\n");
+      out.write("            <li><input type=\"text\" placeholder=\"Tìm kiếm sản phẩm\"> <i class=\"fas fa-search\"></i></li>\n");
+      out.write("            <li><a class=\"fa fa-paw\" href=\"\"></a></li>\n");
+      out.write("            <li><a class=\"fa fa-user\" href=\"\"></a></li>\n");
+      out.write("            <li><a class=\"fa fa-shopping-bag\" href=\"\"></a></li>\n");
+      out.write("        </div>\n");
+      out.write("    </header>\n");
+      out.write("    <body>\n");
+      out.write("        \n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("    \n");
+      out.write("    <!--body-->\n");
+      out.write("    <body>\n");
+      out.write("    <!-------------------------product------------------------->\n");
+      out.write("    ");
+      if (_jspx_meth_c_set_0(_jspx_page_context))
+        return;
+      out.write("\n");
+      out.write("        <section class=\"product\">\n");
+      out.write("                <div class=\"container\">\n");
+      out.write("                        <div class=\"product-top\">\n");
+      out.write("                          <p>Trang chủ</p><span>&#10230;</span><p>Nữ</p><span>&#10230;</span><p>Hàng nữ mới về</p><span>&#10230;</span><p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\n");
+      out.write("                        </div>\n");
+      out.write("                     \n");
+      out.write("                    <div class=\"product-content\">\n");
+      out.write("                        <div class=\"product-content-left\">\n");
+      out.write("                          <div class=\"product-content-left-big-img\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.img}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" alt=\"\">\n");
+      out.write("                          </div>\n");
+      out.write("                        </div>\n");
+      out.write("                        <div class=\"product-content-right\">\n");
+      out.write("                          <div class=\"product-content-right-small-img\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.img}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" alt=\"\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.img}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" alt=\"\">\n");
+      out.write("                            <img src=\"");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.img}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("\" alt=\"\">\n");
+      out.write("                          </div>\n");
+      out.write("                        </div>\n");
+      out.write("                        <div class=\"right-right\">\n");
+      out.write("                          <div class=\"product-content\">\n");
+      out.write("                            <div class=\"product-content-right-product-name\">\n");
+      out.write("                              <h1>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.title}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</h1>\n");
+      out.write("                              <p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.id}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"product-content-right-product-price\">\n");
+      out.write("                              <p>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.price}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("<sup>đ</sup></p>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"product-content-right-product-color\">\n");
+      out.write("                              <p><span style=\"font-weight: bold;\">Màu sắc</span>");
+      out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.mausac}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+      out.write("</p>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"product-content-right-product-size\">\n");
+      out.write("                              <p style=\"font-weight: bold;\">Size</p>\n");
+      out.write("                              <div class=\"size\">\n");
+      out.write("                                <span>S</span>\n");
+      out.write("                                <span>M</span>\n");
+      out.write("                                <span>L</span>\n");
+      out.write("                                <span>XL</span>\n");
+      out.write("                                <span>XXL</span>\n");
+      out.write("                              </div>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"quantily\">\n");
+      out.write("                              <p style=\"font-weight: bold;\">Số lượng: </p>\n");
+      out.write("                              <input type=\"number\" min=\"0\" value=\"1\">\n");
+      out.write("                            </div>\n");
+      out.write("                            <p style=\"color:red;\">Vui lòng chọn size</p>\n");
+      out.write("                            <div class=\"product-content-right-product-button\">\n");
+      out.write("                              <button><i class=\"fas fa-shopping-cart\"></i><p>MUA HÀNG</p></button>\n");
+      out.write("                              <button><p>TÌM TẠI CỬA HÀNG</p></button>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"product-content-right-product-icon\">\n");
+      out.write("                                <div class=\"product-content-right-product-icon-item\">\n");
+      out.write("                                    <i class=\"fas fa-phone-alt\"></i><p>Hotline</p>\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"product-content-right-product-icon-item\">\n");
+      out.write("                                    <i class=\"fas fa-comments\"></i><p>Chat</p>\n");
+      out.write("                                </div>\n");
+      out.write("                                <div class=\"product-content-right-product-icon-item\">\n");
+      out.write("                                    <i class=\"fas fa-envelope\"></i><p>Mail</p>\n");
+      out.write("                                </div>\n");
+      out.write("                            </div>\n");
+      out.write("                            <div class=\"product-content-right-bottom\">\n");
+      out.write("                              <div class=\"product-content-right-bottom-top\"></div>\n");
+      out.write("                            </div>\n");
+      out.write("                          </div>\n");
+      out.write("                        </div>\n");
+      out.write("                    </div>\n");
+      out.write("                    \n");
+      out.write("                </div>\n");
+      out.write("      </section>\n");
+      out.write("  \n");
+      out.write("    <!-- --------------footer------------------>\n");
+      out.write("    ");
+      out.write("\n");
+      out.write("\n");
+      out.write("\n");
+      out.write("<!DOCTYPE html>\n");
+      out.write("<html>\n");
+      out.write("    <head>\n");
+      out.write("        <meta http-equiv=\"Content-Type\" content=\"text/html; charset=UTF-8\">\n");
+      out.write("        <title>JSP Page</title>\n");
+      out.write("        <script src=\"https://kit.fontawesome.com/1147679ae7.js\" crossorigin=\"anonymous\"></script>\n");
+      out.write("        <link rel=\"stylesheet\" href=\"footer.css\"/>\n");
+      out.write("    </head>\n");
+      out.write("    <body>\n");
+      out.write("        <div class=\"footer-top\">\n");
+      out.write("            <li><a href=\"index.html\"><img src=\"https://pubcdn.ivymoda.com/ivy2/images/logo-footer.png\" alt=\"\"></a></li>\n");
+      out.write("            <li><a href=\"http://online.gov.vn/Home/WebDetails/36596\"><img src=\"https://pubcdn.ivymoda.com/ivy2/images/img-congthuong.png\" alt=\"\"></a></li>\n");
+      out.write("            <li><a href=\"\">Liên hệ</a></li>\n");
+      out.write("            <li><a href=\"\">Tuyển dụng</a></li>\n");
+      out.write("            <li><a href=\"\">Giới thiệu</a></li>\n");
+      out.write("            <li>\n");
+      out.write("                <a href=\"\" class=\"fab fa-facebook\"></a>\n");
+      out.write("                <a href=\"\" class=\"fab fa-twitter\"></a>\n");
+      out.write("                <a href=\"\" class=\"fab fa-youtube\"></a>\n");
+      out.write("            </li>\n");
+      out.write("        </div>\n");
+      out.write("\n");
+      out.write("        <div class=\"footer-center\">\n");
+      out.write("            <p>Công ty Cổ phần Dự Kim với số đăng ký kinh doanh: 0105777650</p>\n");
+      out.write("            <p> <b>Địa chỉ đăng ký:</b>  Tổ dân phố Tháp, P.Đại Mỗ, Q.Nam Từ Liêm, TP.Hà Nội, Việt Nam</p>\n");
+      out.write("            <p> <b> Số điện thoại:</b> 0243 205 2222/ 090 589 8683</p>\n");
+      out.write("            <p> <b>Email:</b>  cskh@ivy.com.vn</p>\n");
+      out.write("        </div>\n");
+      out.write("        <div class=\"footer-bottom\">\n");
+      out.write("            ©IVYmoda All rights reserved\n");
+      out.write("        </div>\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+      out.write("\n");
+      out.write("    </body>\n");
+      out.write("</html>\n");
+    } catch (Throwable t) {
+      if (!(t instanceof SkipPageException)){
+        out = _jspx_out;
+        if (out != null && out.getBufferSize() != 0)
+          out.clearBuffer();
+        if (_jspx_page_context != null) _jspx_page_context.handlePageException(t);
+        else throw new ServletException(t);
+      }
+    } finally {
+      _jspxFactory.releasePageContext(_jspx_page_context);
+    }
+  }
+
+  private boolean _jspx_meth_c_forEach_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_0 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_0.setParent(null);
+    _jspx_th_c_forEach_0.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNu}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_0.setVar("o");
+    _jspx_th_c_forEach_0.setBegin(0);
+    _jspx_th_c_forEach_0.setEnd(7);
+    int[] _jspx_push_body_count_c_forEach_0 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_0 = _jspx_th_c_forEach_0.doStartTag();
+      if (_jspx_eval_c_forEach_0 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                    <li><a style=\"font-weight: normal\" href=\"category?name=");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.name}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write('"');
+          out.write('>');
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                                ");
+          int evalDoAfterBody = _jspx_th_c_forEach_0.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_0[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_0.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_0.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_0);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_1(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_1 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_1.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_1.setParent(null);
+    _jspx_th_c_forEach_1.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNu}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_1.setVar("o");
+    _jspx_th_c_forEach_1.setBegin(8);
+    _jspx_th_c_forEach_1.setEnd(13);
+    int[] _jspx_push_body_count_c_forEach_1 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_1 = _jspx_th_c_forEach_1.doStartTag();
+      if (_jspx_eval_c_forEach_1 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                    <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                                ");
+          int evalDoAfterBody = _jspx_th_c_forEach_1.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_1.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_1[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_1.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_1.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_1);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_2(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_2 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_2.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_2.setParent(null);
+    _jspx_th_c_forEach_2.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNu}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_2.setVar("o");
+    _jspx_th_c_forEach_2.setBegin(14);
+    _jspx_th_c_forEach_2.setEnd(18);
+    int[] _jspx_push_body_count_c_forEach_2 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_2 = _jspx_th_c_forEach_2.doStartTag();
+      if (_jspx_eval_c_forEach_2 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                    <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                                ");
+          int evalDoAfterBody = _jspx_th_c_forEach_2.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_2.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_2[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_2.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_2.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_2);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_3(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_3 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_3.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_3.setParent(null);
+    _jspx_th_c_forEach_3.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNu}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_3.setVar("o");
+    _jspx_th_c_forEach_3.setBegin(19);
+    _jspx_th_c_forEach_3.setEnd(21);
+    int[] _jspx_push_body_count_c_forEach_3 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_3 = _jspx_th_c_forEach_3.doStartTag();
+      if (_jspx_eval_c_forEach_3 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                    <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                                ");
+          int evalDoAfterBody = _jspx_th_c_forEach_3.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_3.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_3[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_3.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_3.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_3);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_4(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_4 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_4.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_4.setParent(null);
+    _jspx_th_c_forEach_4.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNu}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_4.setVar("o");
+    _jspx_th_c_forEach_4.setBegin(22);
+    _jspx_th_c_forEach_4.setEnd(25);
+    int[] _jspx_push_body_count_c_forEach_4 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_4 = _jspx_th_c_forEach_4.doStartTag();
+      if (_jspx_eval_c_forEach_4 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                                    <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                                ");
+          int evalDoAfterBody = _jspx_th_c_forEach_4.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_4.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_4[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_4.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_4.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_4);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_5(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_5 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_5.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_5.setParent(null);
+    _jspx_th_c_forEach_5.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNam}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_5.setVar("o");
+    _jspx_th_c_forEach_5.setBegin(0);
+    _jspx_th_c_forEach_5.setEnd(6);
+    int[] _jspx_push_body_count_c_forEach_5 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_5 = _jspx_th_c_forEach_5.doStartTag();
+      if (_jspx_eval_c_forEach_5 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_5.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_5.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_5[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_5.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_5.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_5);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_6(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_6 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_6.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_6.setParent(null);
+    _jspx_th_c_forEach_6.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNam}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_6.setVar("o");
+    _jspx_th_c_forEach_6.setBegin(7);
+    _jspx_th_c_forEach_6.setEnd(11);
+    int[] _jspx_push_body_count_c_forEach_6 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_6 = _jspx_th_c_forEach_6.doStartTag();
+      if (_jspx_eval_c_forEach_6 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_6.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_6.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_6[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_6.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_6.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_6);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_7(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_7 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_7.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_7.setParent(null);
+    _jspx_th_c_forEach_7.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNam}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_7.setVar("o");
+    _jspx_th_c_forEach_7.setBegin(12);
+    _jspx_th_c_forEach_7.setEnd(12);
+    int[] _jspx_push_body_count_c_forEach_7 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_7 = _jspx_th_c_forEach_7.doStartTag();
+      if (_jspx_eval_c_forEach_7 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_7.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_7.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_7[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_7.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_7.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_7);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_8(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_8 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_8.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_8.setParent(null);
+    _jspx_th_c_forEach_8.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPNam}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_8.setVar("o");
+    _jspx_th_c_forEach_8.setBegin(13);
+    _jspx_th_c_forEach_8.setEnd(13);
+    int[] _jspx_push_body_count_c_forEach_8 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_8 = _jspx_th_c_forEach_8.doStartTag();
+      if (_jspx_eval_c_forEach_8 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_8.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_8.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_8[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_8.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_8.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_8);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_9(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_9 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_9.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_9.setParent(null);
+    _jspx_th_c_forEach_9.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPTreEm}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_9.setVar("o");
+    _jspx_th_c_forEach_9.setBegin(0);
+    _jspx_th_c_forEach_9.setEnd(6);
+    int[] _jspx_push_body_count_c_forEach_9 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_9 = _jspx_th_c_forEach_9.doStartTag();
+      if (_jspx_eval_c_forEach_9 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_9.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_9.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_9[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_9.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_9.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_9);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_10(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_10 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_10.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_10.setParent(null);
+    _jspx_th_c_forEach_10.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPTreEm}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_10.setVar("o");
+    _jspx_th_c_forEach_10.setBegin(7);
+    _jspx_th_c_forEach_10.setEnd(10);
+    int[] _jspx_push_body_count_c_forEach_10 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_10 = _jspx_th_c_forEach_10.doStartTag();
+      if (_jspx_eval_c_forEach_10 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_10.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_10.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_10[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_10.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_10.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_10);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_11(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_11 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_11.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_11.setParent(null);
+    _jspx_th_c_forEach_11.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPboSuuTap}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_11.setVar("o");
+    _jspx_th_c_forEach_11.setBegin(0);
+    _jspx_th_c_forEach_11.setEnd(13);
+    int[] _jspx_push_body_count_c_forEach_11 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_11 = _jspx_th_c_forEach_11.doStartTag();
+      if (_jspx_eval_c_forEach_11 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_11.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_11.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_11[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_11.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_11.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_11);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_12(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_12 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_12.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_12.setParent(null);
+    _jspx_th_c_forEach_12.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPboSuuTap}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_12.setVar("o");
+    _jspx_th_c_forEach_12.setBegin(14);
+    _jspx_th_c_forEach_12.setEnd(19);
+    int[] _jspx_push_body_count_c_forEach_12 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_12 = _jspx_th_c_forEach_12.doStartTag();
+      if (_jspx_eval_c_forEach_12 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_12.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_12.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_12[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_12.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_12.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_12);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_forEach_13(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:forEach
+    org.apache.taglibs.standard.tag.rt.core.ForEachTag _jspx_th_c_forEach_13 = (org.apache.taglibs.standard.tag.rt.core.ForEachTag) _jspx_tagPool_c_forEach_var_items_end_begin.get(org.apache.taglibs.standard.tag.rt.core.ForEachTag.class);
+    _jspx_th_c_forEach_13.setPageContext(_jspx_page_context);
+    _jspx_th_c_forEach_13.setParent(null);
+    _jspx_th_c_forEach_13.setItems((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${listPboSuuTap}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    _jspx_th_c_forEach_13.setVar("o");
+    _jspx_th_c_forEach_13.setBegin(20);
+    _jspx_th_c_forEach_13.setEnd(22);
+    int[] _jspx_push_body_count_c_forEach_13 = new int[] { 0 };
+    try {
+      int _jspx_eval_c_forEach_13 = _jspx_th_c_forEach_13.doStartTag();
+      if (_jspx_eval_c_forEach_13 != javax.servlet.jsp.tagext.Tag.SKIP_BODY) {
+        do {
+          out.write("\n");
+          out.write("                            <li><a style=\"font-weight: normal\" href=\"category\">");
+          out.write((java.lang.String) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${o.product}", java.lang.String.class, (PageContext)_jspx_page_context, null));
+          out.write("</a>\n");
+          out.write("                        ");
+          int evalDoAfterBody = _jspx_th_c_forEach_13.doAfterBody();
+          if (evalDoAfterBody != javax.servlet.jsp.tagext.BodyTag.EVAL_BODY_AGAIN)
+            break;
+        } while (true);
+      }
+      if (_jspx_th_c_forEach_13.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+        return true;
+      }
+    } catch (Throwable _jspx_exception) {
+      while (_jspx_push_body_count_c_forEach_13[0]-- > 0)
+        out = _jspx_page_context.popBody();
+      _jspx_th_c_forEach_13.doCatch(_jspx_exception);
+    } finally {
+      _jspx_th_c_forEach_13.doFinally();
+      _jspx_tagPool_c_forEach_var_items_end_begin.reuse(_jspx_th_c_forEach_13);
+    }
+    return false;
+  }
+
+  private boolean _jspx_meth_c_set_0(PageContext _jspx_page_context)
+          throws Throwable {
+    PageContext pageContext = _jspx_page_context;
+    JspWriter out = _jspx_page_context.getOut();
+    //  c:set
+    org.apache.taglibs.standard.tag.rt.core.SetTag _jspx_th_c_set_0 = (org.apache.taglibs.standard.tag.rt.core.SetTag) _jspx_tagPool_c_set_var_value_nobody.get(org.apache.taglibs.standard.tag.rt.core.SetTag.class);
+    _jspx_th_c_set_0.setPageContext(_jspx_page_context);
+    _jspx_th_c_set_0.setParent(null);
+    _jspx_th_c_set_0.setVar("o");
+    _jspx_th_c_set_0.setValue((java.lang.Object) org.apache.jasper.runtime.PageContextImpl.evaluateExpression("${detailP}", java.lang.Object.class, (PageContext)_jspx_page_context, null));
+    int _jspx_eval_c_set_0 = _jspx_th_c_set_0.doStartTag();
+    if (_jspx_th_c_set_0.doEndTag() == javax.servlet.jsp.tagext.Tag.SKIP_PAGE) {
+      _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_0);
+      return true;
+    }
+    _jspx_tagPool_c_set_var_value_nobody.reuse(_jspx_th_c_set_0);
+    return false;
+  }
+}
