@@ -1678,7 +1678,6 @@ CREATE TABLE DanhSachHoaDon (
 CREATE TABLE ChiTietHoaDon (
     idHoaDon INT PRIMARY KEY REFERENCES DanhSachHoaDon(idDSHD),
     idSanPham INT,
-    giaBan FLOAT,
     soLuong INT,
    --  CONSTRAINT FK_CTHD_DSHD FOREIGN KEY (idHoaDon) REFERENCES NhanVien(idDSHD)
     CONSTRAINT FK_CTHD_NV FOREIGN KEY (idSanPham) REFERENCES SanPham(idSanPham)
