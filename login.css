@@ -1,0 +1,36 @@
+.noidung {
+  height:600px ;
+  width:600px ;
+  font-size: large;
+  font-style: normal;
+  justify-content: center;
+  float:left;
+}
+.nd2{
+    margin-left: 100px;
+}
+.nd1{
+  margin-left: 100px;
+}
+.header{
+  text-align: center;
+}
+.input{
+  height: 20px;
+  width: 630px;
+  padding: 10px 10px 10px 10px;
+  border-radius: 10px;
+}
+.bt{
+  margin-left: 30px;
+  border-bottom-left-radius:10px ;
+  border-top-right-radius:10px ;
+  padding: 20px;
+}
+.dn {
+  margin-top: 50px;
+  
+}
+p{
+  color: #8f8d8d;
+}
