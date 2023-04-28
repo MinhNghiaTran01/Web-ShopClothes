@@ -24,8 +24,11 @@
     <!-------------------------product------------------------->
     <c:set var="o" value="${requestScope.detailP}" />
     <c:set var="list" value="${requestScope.listPimg}" />
+<<<<<<< HEAD
     <c:set var="kichCo" value="${requestScope.kichCo}" />
     <c:set var="mau" value="${requestScope.mau}" />
+=======
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
     <form name="f" action="" method="post">
         <section class="product">
                 <div class="container">
@@ -58,7 +61,11 @@
                               <p>${o.giaBan}<sup>đ</sup></p>
                             </div>
                             <div class="product-content-right-product-color">
+<<<<<<< HEAD
                               <p><span style="font-weight: bold;">Màu sắc: </span>${mau.color}</p>
+=======
+                              <p><span style="font-weight: bold;">Màu sắc</span>${o.mauSac}</p>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </div>
                             <div class="product-content-right-product-size">
                               <p style="font-weight: bold;">Size</p>
@@ -76,7 +83,11 @@
                             </div>
                             <p style="color:red;">Vui lòng chọn size</p>
                             <div class="product-content-right-product-button">
+<<<<<<< HEAD
                                 <button onclick=buy('${o.idSanPham}') ><i class="fas fa-shopping-cart"></i><p>MUA HÀNG</p></button>
+=======
+                                <button onclick=buy(${o.idSanPham}) ><i class="fas fa-shopping-cart"></i><p>MUA HÀNG</p></button>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                               <button><p>TÌM TẠI CỬA HÀNG</p></button>
                             </div>
                             <div class="product-content-right-product-icon">
@@ -101,12 +112,21 @@
       </section>
     </form>
     <!-- --------------footer------------------>
+<<<<<<< HEAD
     </body>
     <%@include file="footer.jsp" %>
     <script>
         function buy(idSanPham){
             var soLuong = document.f.soLuong.value;
             document.f.action = "themvaogiohang?idSanPham=" + idSanPham + "&soLuong=" + soLuong + "&url=" + "trangsanpham.jsp";
+=======
+    <%@include file="footer.jsp" %>
+    </body>
+    <script>
+        function buy(idSanPham){
+            var soLuong = document.f.soLuong.value;
+            document.f.action = "buy?idsanPham = " + idSanPham + "&soLuong = " + soLuong;
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
             document.f.submit();
         }
     </script>

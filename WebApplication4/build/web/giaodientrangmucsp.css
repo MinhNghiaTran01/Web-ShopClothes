@@ -248,7 +248,10 @@ header:hover{
     text-align: center;
     padding: 12px 0;
     margin-left: 20px;
+<<<<<<< HEAD
     clear: both;
+=======
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 }
 .category-right-content-item h2 {
     font-size: 12px;
@@ -258,7 +261,10 @@ header:hover{
 }
 .category-right-content-item img{
     width: 100%;
+<<<<<<< HEAD
     clear: both;
+=======
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 }
 .category-right-content-item p{
     font-size: 12px;

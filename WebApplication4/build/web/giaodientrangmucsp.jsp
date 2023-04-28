@@ -1,8 +1,13 @@
 
 
 <%@page import="java.util.ArrayList"%>
+<<<<<<< HEAD
 <%@page import="entity.sanpham"%>
 <%@page import="entity.danhmucsanpham"%>
+=======
+<%@page import="entity.SanPham"%>
+<%@page import="entity.DanhMucSanPham"%>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 <%@page import="java.util.List"%>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
@@ -11,7 +16,11 @@
 <html>
     <head>
         <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<<<<<<< HEAD
         <title>danhmucsanpham</title>
+=======
+        <title>@@</title>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         <script src="https://kit.fontawesome.com/1147679ae7.js" crossorigin="anonymous"></script>
         <link rel="stylesheet" href="./giaodientrangmucsp.css">
         
@@ -90,7 +99,11 @@
                             <div class="category-right-top" style="display: flex;">
                                 <div class="category-right-top-item">
                                     <c:set var="x"  value= "${requestScope.dmsp}" />
+<<<<<<< HEAD
                                     <p>${x.tenLoaiSanPham}</p>
+=======
+                                    <p>${x.tenSanPham}</p>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                                 </div>
 
                                 <div class="category-right-top-item">

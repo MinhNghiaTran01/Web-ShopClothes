@@ -5,6 +5,7 @@
 
 package controller;
 
+<<<<<<< HEAD
 import entity.gioHang;
 import dao.DAO;
 import entity.danhmucsanpham;
@@ -18,6 +19,17 @@ import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
+=======
+import dao.DAO;
+import entity.DanhMucSanPham;
+import entity.GioHang;
+import entity.SanPham;
+import java.io.IOException;
+import java.io.PrintWriter;
+import java.util.List;
+import javax.servlet.ServletException;
+import javax.servlet.annotation.WebServlet;
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
@@ -41,6 +53,7 @@ public class giohang extends HttpServlet {
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
         
+<<<<<<< HEAD
         Cookie[] ctmp = request.getCookies();
         String sdtKhachHang = "";
         boolean check = false;
@@ -59,11 +72,26 @@ public class giohang extends HttpServlet {
         List<danhmucsanpham> list_menu_nam = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_treEm = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+=======
+        HttpSession session = request.getSession();
+        String sdtKhachHang = (String) session.getAttribute("user");
+        
+        
+        DAO DAO = new DAO();
+        
+        List<GioHang> list = DAO.getProductBysdtKhachHang(sdtKhachHang);
+
+        List<DanhMucSanPham> list_menu_nu = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_nam = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_treEm = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         request.setAttribute("listPNu", list_menu_nu);
         request.setAttribute("listPNam", list_menu_nam);
         request.setAttribute("listPTreEm", list_menu_treEm);
         request.setAttribute("listPboSuuTap", list_menu_boSuuTap);
         
+<<<<<<< HEAD
         if(check==true){
             List<gioHang> listGioHang = DAO.getProductBysdtKhachHang(sdtKhachHang);
             List<sanpham> listsanpham = new ArrayList<>();
@@ -107,6 +135,12 @@ public class giohang extends HttpServlet {
             request.getRequestDispatcher("GIO_HANG.jsp").forward(request, response);
 //            response.sendRedirect("GIO_HANG.jsp");
        }
+=======
+        request.setAttribute("listP", list);
+        request.getRequestDispatcher("GIO_HANG.jsp").forward(request, response);
+        
+        
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

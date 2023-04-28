@@ -6,7 +6,11 @@
 package controller;
 
 import dao.DAO;
+<<<<<<< HEAD
 import entity.account;
+=======
+import entity.Account;
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 import java.io.IOException;
 import java.io.PrintWriter;
 import javax.servlet.ServletException;
@@ -38,14 +42,23 @@ public class login extends HttpServlet {
         String pass = request.getParameter("pass");
         String rem =  request.getParameter("rem");
         
+<<<<<<< HEAD
             DAO DAO = new DAO();
             account acc = DAO.getAccountByUserName(user,pass);
+=======
+        DAO DAO = new DAO();
+            Account acc = DAO.getAccountByUserName(user,pass);
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
             if(acc.getIdAccount()!=null)
             {
                 Cookie cuser = new Cookie("cuser", user);
                 Cookie cpass = new Cookie("cpass", pass);
                 Cookie crem = new Cookie("crem", rem);
+<<<<<<< HEAD
                 if(rem!=null){
+=======
+                if(crem!=null){
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                     cuser.setMaxAge(24*60*60);
                     cpass.setMaxAge(24*60*60);
                     crem.setMaxAge(24*60*60);
@@ -63,6 +76,10 @@ public class login extends HttpServlet {
                 session.setAttribute("pass", acc.getPassword());
                 response.sendRedirect("menuServlet");
             }
+<<<<<<< HEAD
+=======
+       
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         
     } 
 

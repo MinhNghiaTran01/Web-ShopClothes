@@ -6,6 +6,7 @@
 package controller;
 
 import dao.DAO;
+<<<<<<< HEAD
 import entity.danhmucsanpham;
 import entity.gioHang;
 import entity.productimage;
@@ -13,6 +14,10 @@ import entity.sanpham;
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
+=======
+import java.io.IOException;
+import java.io.PrintWriter;
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.Cookie;
@@ -35,6 +40,7 @@ public class themvaogiohang extends HttpServlet {
      * @throws ServletException if a servlet-specific error occurs
      * @throws IOException if an I/O error occurs
      */
+<<<<<<< HEAD
     
       protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
@@ -66,6 +72,18 @@ public class themvaogiohang extends HttpServlet {
             String sdtKhachHang = (String) obj;
             DAO.InsertGioHangByID( sdtKhachHang, idSanPham,Integer.parseInt(soLuong) );
             response.sendRedirect("trangsanpham.jsp");
+=======
+    protected void processRequest(HttpServletRequest request, HttpServletResponse response)
+    throws ServletException, IOException {
+        response.setContentType("text/html;charset=UTF-8");
+        HttpSession session = request.getSession();
+        String idSanPham = request.getParameter("idSanPham");
+        String soLuong = request.getParameter("soLuong");
+        String sdtKhachHang = (String) session.getAttribute("user");
+        DAO DAO = new DAO();
+        if(sdtKhachHang!=null){
+            DAO.InsertGioHangByID( sdtKhachHang, idSanPham,Integer.parseInt(soLuong) );
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         }
         else{
             Cookie[] carr = request.getCookies();
@@ -79,12 +97,20 @@ public class themvaogiohang extends HttpServlet {
                     }
                 }
             }
+<<<<<<< HEAD
             
             txt+= idSanPham + ":" + soLuong + "/";
             Cookie c = new Cookie("cart", txt);
             c.setMaxAge(24*60*60);
             response.addCookie(c);
             request.getRequestDispatcher("trangsanpham.jsp").forward(request, response);
+=======
+            else{
+                txt+= idSanPham + ":" + soLuong;
+            }
+            Cookie c = new Cookie("cart", txt);
+            response.addCookie(c);
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         }
     } 
 

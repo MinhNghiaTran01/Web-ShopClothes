@@ -6,11 +6,17 @@
 package controller;
 
 import dao.DAO;
+<<<<<<< HEAD
 import entity.danhmucsanpham;
 import entity.kichco;
 import entity.mau;
 import entity.productimage;
 import entity.sanpham;
+=======
+import entity.DanhMucSanPham;
+import entity.ProductImage;
+import entity.SanPham;
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -41,6 +47,7 @@ public class detailServlet extends HttpServlet {
         String idSanPham =  request.getParameter("idSanPham") ;
         DAO DAO = new DAO();
         
+<<<<<<< HEAD
         sanpham p = DAO.getProductByID(idSanPham);
         kichco kichCo = DAO.getKichCoByID(idSanPham);
         mau mau = DAO.getMauByID(p.getIdMau());
@@ -50,6 +57,15 @@ public class detailServlet extends HttpServlet {
         List<danhmucsanpham> list_menu_nam = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_treEm = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+=======
+        SanPham p = DAO.getProductByID(idSanPham);
+        
+        List<ProductImage> listPimg = DAO.getProductImageByID(idSanPham);
+        List<DanhMucSanPham> list_menu_nu = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_nam = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_treEm = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         request.setAttribute("listPNu", list_menu_nu);
         request.setAttribute("listPNam", list_menu_nam);
         request.setAttribute("listPTreEm", list_menu_treEm);
@@ -57,8 +73,11 @@ public class detailServlet extends HttpServlet {
         
         request.setAttribute("detailP", p);
         request.setAttribute("listPimg", listPimg);
+<<<<<<< HEAD
         request.setAttribute("kichCo", kichCo);
         request.setAttribute("mau", mau);
+=======
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         
         request.getRequestDispatcher("trangsanpham.jsp").forward(request, response);
     } 

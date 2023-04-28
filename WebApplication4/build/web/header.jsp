@@ -60,45 +60,75 @@
                     </ul>
                         <ul>
                             <li><a style="font-weight: bold" href="">Áo</a>
+<<<<<<< HEAD
                                 <c:forEach items="${listPNu}" var="o" >
                                     <c:if test="${o.theloai=='nu_ao'}">
                                         <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                                <c:forEach items="${listPNu}" var="o" begin="0" end="7">
+                                    <c:if test="${o.theloai=='nu_ao'}">
+                                        <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                                     </c:if>    
                                 </c:forEach>
                         </ul>
                     
                         <ul>
                             <li><a style="font-weight: bold" href="">Áo Khoác</a>
+<<<<<<< HEAD
                                 <c:forEach items="${listPNu}" var="o" >
                                    <c:if test="${o.theloai=='nu_aoKhoac'}">
                                         <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                                <c:forEach items="${listPNu}" var="o" begin="8" end="13">
+                                   <c:if test="${o.theloai=='nu_quan'}">
+                                        <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                                     </c:if>      
                                 </c:forEach>
                         </ul>
                     
                         <ul>
                             <li><a style="font-weight: bold" href="">Quần</a>
+<<<<<<< HEAD
                                 <c:forEach items="${listPNu}" var="o" >
                                     <c:if test="${o.theloai=='nu_quan'}">
                                         <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                                <c:forEach items="${listPNu}" var="o" begin="14" end="18">
+                                    <c:if test="${o.theloai=='nu_quan'}">
+                                        <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                                     </c:if>  
                                 </c:forEach>
                         </ul>
                         
                         <ul>
                             <li><a style="font-weight: bold" href="">Chân váy</a>
+<<<<<<< HEAD
                                 <c:forEach items="${listPNu}" var="o">
                                      <c:if test="${o.theloai=='nu_chanVay'}">
                                         <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                                <c:forEach items="${listPNu}" var="o" begin="19" end="21">
+                                     <c:if test="${o.theloai=='nu_chanvay'}">
+                                        <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                                     </c:if>  
                                 </c:forEach>
                         </ul>
                         
                         <ul>
                             <li><a style="font-weight: bold" href="">Đầm</a>
+<<<<<<< HEAD
                                 <c:forEach items="${listPNu}" var="o">
                                     <c:if test="${o.theloai=='nu_dam'}">
                                         <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                                <c:forEach items="${listPNu}" var="o" begin="22" end="25">
+                                    <c:if test="${o.theloai=='nu_dam'}">
+                                        <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                                     </c:if>  
                                 </c:forEach>
                         </ul>
@@ -117,36 +147,60 @@
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">Áo</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPNam}" var="o">
                             <c:if test="${o.theloai=='nam_ao'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPNam}" var="o" begin="0" end="6">
+                            <c:if test="${o.theloai=='nam_ao'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">Quần</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPNam}" var="o" >
                             <c:if test="${o.theloai=='nam_quan'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPNam}" var="o" begin="7" end="11">
+                            <c:if test="${o.theloai=='nam_quan'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">GIÀY & DÉP</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPNam}" var="o" >
                             <c:if test="${o.theloai=='nam_giayDep'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPNam}" var="o" begin="12" end="12">
+                            <c:if test="${o.theloai=='nam_giaydep'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">PHỤ KIỆN</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPNam}" var="o" >
                             <c:if test="${o.theloai=='nam_phuKien'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPNam}" var="o" begin="13" end="13">
+                            <c:if test="${o.theloai=='nam_phukien'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
@@ -166,18 +220,30 @@
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">BÉ GÁI</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPTreEm}" var="o" >
                             <c:if test="${o.theloai=='treEm_beGai'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${(o.idDanhMucSanPham)}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPTreEm}" var="o" begin="0" end="6">
+                            <c:if test="${o.theloai=='treem_begai'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">BÉ TRAI</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPTreEm}" var="o" >
                             <c:if test="${o.theloai=='treEm_beTrai'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPTreEm}" var="o" begin="7" end="10">
+                            <c:if test="${o.theloai=='treem_betrai'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
@@ -191,27 +257,45 @@
                 <ul class="sub-menu_boSuuTap">   
                     <ul>
                         <li><a style="font-weight: bold" href="">NỮ</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPboSuuTap}" var="o">
                             <c:if test="${o.theloai=='bosuutap_nu'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPboSuuTap}" var="o" begin="0" end="13">
+                            <c:if test="${o.theloai=='bosuutap_nu'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">NAM</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPboSuuTap}" var="o" >
                             <c:if test="${o.theloai=='bosuutap_nam'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPboSuuTap}" var="o" begin="14" end="19">
+                            <c:if test="${o.theloai=='bosuutap_nam'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
                     
                     <ul>
                         <li><a style="font-weight: bold" href="">TRẺ EM</a>
+<<<<<<< HEAD
                         <c:forEach items="${listPboSuuTap}" var="o" >
                             <c:if test="${o.theloai=='bosuutap_treEm'}">
                                 <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.idDanhMucSanPham}">${o.tenLoaiSanPham}</a>
+=======
+                        <c:forEach items="${listPboSuuTap}" var="o" begin="20" end="22">
+                            <c:if test="${o.theloai=='bosuutap_treem'}">
+                                <li><a style="font-weight: normal" href="category?idDanhMucSanPham=${o.o.idDanhMucSanPham}">${o.tenSanPham}</a>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
                             </c:if>  
                         </c:forEach>
                     </ul>
@@ -224,11 +308,18 @@
             <img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" alt="ảnh lỗi"/>
         </div>
         <div class="orthers">
+<<<<<<< HEAD
             <li><input type="text" placeholder="Tìm kiếm sản phẩm"> <i class="fas fa-search"> </i></li>
             <li><a class="fa fa-paw" href=""></a></li>
             <li><a class="fa fa-user" href="login.jsp"></a></li>
             <li><a class="fa fa-shopping-bag" href="giohang"></a></li>
             <a href="login.jsp">dang xuat</a>
+=======
+            <li><input type="text" placeholder="Tìm kiếm sản phẩm"> <i class="fas fa-search"></i></li>
+            <li><a class="fa fa-paw" href=""></a></li>
+            <li><a class="fa fa-user" href=""></a></li>
+            <li><a class="fa fa-shopping-bag" href=""></a></li>
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         </div>
     </header>
     <body>

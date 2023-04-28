@@ -6,7 +6,11 @@
 package controller;
 
 import dao.DAO;
+<<<<<<< HEAD
 import entity.danhmucsanpham;
+=======
+import entity.DanhMucSanPham;
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
 import java.io.IOException;
 import java.io.PrintWriter;
 import java.util.List;
@@ -33,10 +37,17 @@ public class menuServlet extends HttpServlet {
         response.setContentType("text/html;charset=UTF-8");
         
         DAO DAO = new DAO();
+<<<<<<< HEAD
         List<danhmucsanpham> list_menu_nu = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_nam = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_treEm = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+=======
+        List<DanhMucSanPham> list_menu_nu = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_nam = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_treEm = DAO.getAllDanhMucSanPham();
+        List<DanhMucSanPham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+>>>>>>> 88610dba7d3f194111e5470ddfd41247a15bad40
         
         request.setAttribute("listPNu", list_menu_nu);
         request.setAttribute("listPNam", list_menu_nam);
