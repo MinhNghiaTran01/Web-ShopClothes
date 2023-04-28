@@ -116,13 +116,13 @@ public class DAO {
     
     
 
-    public sanpham getProductByID(String iddanhmucsanpham){
+    public sanpham getProductByID(String idSanPham){
         sanpham sp = new sanpham();
         try {
-            String query = "select * from sanpham " + " where idDanhMucSanPham = ? ";
+            String query = "select * from sanpham " + " where idSanPham = ? ";
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
-            ps.setString(1, iddanhmucsanpham);
+            ps.setString(1, idSanPham);
             rs = ps.executeQuery();
             while(rs.next()){
                 sp =  new sanpham( rs.getString(1), rs.getString(2),

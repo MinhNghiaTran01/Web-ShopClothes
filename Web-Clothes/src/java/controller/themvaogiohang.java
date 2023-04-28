@@ -8,6 +8,8 @@ package controller;
 import dao.DAO;
 import entity.danhmucsanpham;
 import entity.gioHang;
+import entity.kichco;
+import entity.mau;
 import entity.productimage;
 import entity.sanpham;
 import java.io.IOException;
@@ -44,10 +46,34 @@ public class themvaogiohang extends HttpServlet {
         HttpSession session = request.getSession();
         String idSanPham = request.getParameter("idSanPham");
         String soLuong = request.getParameter("soLuong");
-        String sdtKhachHang = (String) session.getAttribute("user");
+        Object obj = session.getAttribute("user");
         DAO DAO = new DAO();
-        if(sdtKhachHang!=null){
+        
+        
+        List<productimage> listPimg = DAO.getProductImageByID(idSanPham);
+        List<danhmucsanpham> list_menu_nu = DAO.getAllDanhMucSanPham();
+        List<danhmucsanpham> list_menu_nam = DAO.getAllDanhMucSanPham();
+        List<danhmucsanpham> list_menu_treEm = DAO.getAllDanhMucSanPham();
+        List<danhmucsanpham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+        sanpham p = DAO.getProductByID(idSanPham);
+        kichco kichCo = DAO.getKichCoByID(idSanPham);
+        mau mau = DAO.getMauByID(p.getIdMau());
+        
+        request.setAttribute("listPNu", list_menu_nu);
+        request.setAttribute("listPNam", list_menu_nam);
+        request.setAttribute("listPTreEm", list_menu_treEm);
+        request.setAttribute("listPboSuuTap", list_menu_boSuuTap);
+        
+        request.setAttribute("detailP", p);
+        request.setAttribute("listPimg", listPimg);
+        request.setAttribute("kichCo", kichCo);
+        request.setAttribute("mau", mau);
+        
+        if(obj!=null){
+            String sdtKhachHang = (String) obj;
             DAO.InsertGioHangByID( sdtKhachHang, idSanPham,Integer.parseInt(soLuong) );
+//            response.sendRedirect("trangsanpham.jsp");
+            request.getRequestDispatcher("trangsanpham.jsp").forward(request, response);
         }
         else{
             Cookie[] carr = request.getCookies();
@@ -66,6 +92,7 @@ public class themvaogiohang extends HttpServlet {
             Cookie c = new Cookie("cart", txt);
             c.setMaxAge(24*60*60);
             response.addCookie(c);
+//            response.sendRedirect("trangsanpham.jsp");
             request.getRequestDispatcher("trangsanpham.jsp").forward(request, response);
         }
     } 

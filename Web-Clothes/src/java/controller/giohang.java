@@ -55,15 +55,13 @@ public class giohang extends HttpServlet {
         for(Cookie o: ctmp){
             if(o.getName().equals("cuser")){
                 sdtKhachHang = o.getValue();
-                check= true;
+                check = true;
                 break;
             }
         }
         
-        
         DAO DAO = new DAO();
         
-        List<gioHang> list = DAO.getProductBySDTKhachHang(sdtKhachHang);
 
         List<danhmucsanpham> list_menu_nu = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_nam = DAO.getAllDanhMucSanPham();
@@ -75,16 +73,14 @@ public class giohang extends HttpServlet {
         request.setAttribute("listPTreEm", list_menu_treEm);
         request.setAttribute("listPboSuuTap", list_menu_boSuuTap);
         
-        if(check==true){
+       if(check==true){
             List<gioHang> listGioHang = DAO.getProductBySDTKhachHang(sdtKhachHang);
             List<sanpham> listsanpham = new ArrayList<>();
             
             for(gioHang tmp: listGioHang){
                 listsanpham.add(DAO.getProductByID( tmp.getIdSanPham()) );
             }
-            request.setAttribute("listsanpham", listsanpham);
-            request.getRequestDispatcher("GIO_HANG.jsp").forward(request, response);
-//            response.sendRedirect("GIO_HANG.jsp");
+            request.setAttribute("listSanPham", listsanpham);
        }
        else{
             String txt = "";
@@ -115,10 +111,7 @@ public class giohang extends HttpServlet {
             request.setAttribute("listSanPham", listSanPham);
             request.setAttribute("listKichCo", listKichCo);
             request.setAttribute("listMau", listMau);
-            request.getRequestDispatcher("GIO_HANG.jsp").forward(request, response);
-//            response.sendRedirect("GIO_HANG.jsp");
        }
-        request.setAttribute("listP", list);
         request.getRequestDispatcher("GIO_HANG.jsp").forward(request, response);
         
         

@@ -224,7 +224,7 @@
             <img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" alt="ảnh lỗi"/>
         </div>
         <div class="orthers">
-            <li><input type="text" placeholder="Tìm kiếm sản phẩm"> <i class="fas fa-search"> </i></li>
+            <li><input type="text" name="timkiem" placeholder="Tìm kiếm sản phẩm"> <i class="fas fa-search"> </i></li>
             <li><a class="fa fa-paw" href=""></a></li>
             <li><a class="fa fa-user" href="login.jsp"></a></li>
             <li><a class="fa fa-shopping-bag" href="giohang"></a></li>
@@ -232,6 +232,19 @@
         </div>
     </header>
     <body>
-        
     </body>
+    <script>
+        var keywordInput = document.getElementById("keyword");
+        keywordInput.addEventListener("keyup", function(event) {
+    // kiểm tra xem phím được nhấn có phải là phím Enter không
+    if (event.keyCode === 13) {
+        // ngăn chặn việc gửi form
+        event.preventDefault();
+        
+        // thực hiện chức năng tìm kiếm sản phẩm ở đây
+        ...
+        }
+    });
+
+    </script>
 </html>
