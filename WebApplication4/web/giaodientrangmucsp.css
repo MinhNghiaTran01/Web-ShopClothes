@@ -1,0 +1,343 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Arial, Helvetica, sans-serif;
+}
+li{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #212529;
+}
+header{
+    width: 100%     ;
+    display: flex;
+    justify-content: space-between;
+    padding: 12px 50px;
+    height: 70px;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1;
+    background: rgba(255, 2555, 255,0.7);
+    transition: background-color 0.5s ease;
+}
+header .sticky{
+    background-color: red;
+}
+header:hover{
+    background: rgba(255, 2555, 255,1);
+}
+.logo{
+    flex:2;
+    justify-content: center;
+}
+.menu{
+    flex:4;
+    display: flex;
+}
+.menu li{
+    margin: 0px 12px 0px 0px;
+    padding: 15px 4px;
+    position: relative;
+}
+.menu > li:hover .sub-menu{
+    display: block;
+}
+.menu > li a{
+    display: block;
+    line-height: 20px;
+    font-weight: bold;
+}
+.sub-menu ul{
+    padding-left: 20px;
+}
+.sub-menu{
+    display: none;
+    line-height: 5px;
+    position: absolute;
+    width: 200px;
+    border: 1px solid #ccc;
+    padding: 10px 0 10px 20px;
+    z-index: 1;
+    background: #fff;
+}
+.sub-menu > li a{
+    font-weight: normal;
+}
+.orthers{
+    flex:2;
+    display: flex;
+}
+.orthers > li{
+    padding: 0px 12px;
+}
+.orthers > li:first-child{
+    position: relative;
+}
+#Slider{
+    padding-bottom: 30px;
+    border-bottom: 2px solid #000;
+    overflow: hidden;
+}
+.orthers > li:first-child input{
+    padding: 8px 8px 15px 35px;
+    width: 100%;
+    border: 1px solid #E7E8E9;
+    background-color: rgba(255, 2555, 255,0.9);
+    border-radius: 4px;
+    height: 40px;
+    font-weight: bold;
+
+
+}
+.orthers > li:first-child i{
+    padding: 8px 8px 5px 5px;
+    position: absolute;
+    left: 10px ;
+}
+.orthers > li:not(:first-child) {
+    padding: 12px 12px 0px 0px;
+}
+
+.aspect-ratio-169 {
+    display: block;
+    position: relative;
+    padding-top: 56.25%;
+}
+
+.aspect-ratio-169 img  {
+    display: block;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+}
+.dot-container{
+    position: absolute;
+    height: 50px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.dot{
+    height: 18px;
+    width: 18px;
+    background-color: #ccc;
+    border-radius: 50%;
+    margin-left: 12px;
+    cursor: pointer;
+}
+.dot.active{
+    background-color: #333;
+}
+/*--------------------category----------------------------*/
+.category {
+    padding: 100px 0 0;
+}
+
+.category-top {
+    margin-bottom: 50px;
+}
+
+.category-top p {
+    font-family: var(--main-text-font);
+    margin: 0 12px;
+    font-size: 16px;
+}
+
+.category-left {
+    width: 20%;
+}
+.cart-content-left table
+{
+    width: 60%;
+    text-align: center;
+    float: left;
+}
+.cart-content-left table th
+{
+    padding-bottom: 30px;
+    font-family: "Times New Roman";
+    font-size: 12px;
+    text-transform: uppercase;
+    color: #333;
+    border-collapse: collapse;
+    border-bottom: 2px solid #dddddd;
+}
+.cart-content-left table p{
+    font-family: "Times New Roman";
+    font-size: 16px;
+    color: #333333;
+}
+.cart-content-left table input
+{
+    width: 30px;
+}
+.cart-content-left table span
+{
+    display: block;
+    width: 20px;
+    height: 20px;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+.cart-content-left table td{
+    padding: 20px 0;
+    border-bottom: 2px solid #dddddd;
+}
+.container{
+    display: flex;
+    flex-direction: column;
+}
+.container-body{
+    display: flex;
+}
+.category-right {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+}
+.category-right-top{
+    display: flex;
+}
+.category-right-top-item:first-child {
+    flex: 2;
+    font-size: 16px;
+    font-family: var(--main-text-font);
+    font-weight: bold;
+}
+
+.category-right-top-item {
+    flex: 1;
+    padding: 0 12px;
+}
+
+.category-right-top-item button {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+}
+
+.category-right-top-item select {
+    width: 100%;
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffff;
+    border: 1px solid #dddddd;
+    cursor: pointer;
+
+}
+.category-right-content {
+    display: flex;
+    margin-top: 20px;
+    justify-content: space-between;
+}
+.category-right-content-item {
+    width: calc(25% - 12px);
+    text-align: center;
+    padding: 12px 0;
+    margin-left: 20px;
+    clear: both;
+}
+.category-right-content-item h2 {
+    font-size: 12px;
+    font-family: var(--main-text-font);
+    margin-top: 6px;
+    color: #57585A;
+}
+.category-right-content-item img{
+    width: 100%;
+    clear: both;
+}
+.category-right-content-item p{
+    font-size: 12px;
+}
+.category-right-bottom {
+    justify-content: space-between;
+    margin: 30px 0 20px;
+    width: 100%;
+}
+.category-right-bottom p{
+    font-family: var(--main-text-font);
+    font-size: 11px;
+}
+
+.category-left ul li {
+    padding: 12px;
+}
+.category-left ul li>a{
+    color: black;
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--main-text-font);
+}
+.category-left ul li ul li {
+    padding-left: 10px;
+}
+.category-left-li ul {
+    display: none;
+}
+.category-left-li.block ul {
+    display: block;
+}
+.category-left ul li ul li {
+    color: #3333;
+    font-size: 12px;
+}
+
+.category-right-bottom{
+    display: flex;
+}
+
+
+/* --------------footer----------------- */
+footer{
+    text-align: center;
+}
+.footer-top{
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    height: 70px;
+}
+.footer-top img{
+    height: 50px;
+}
+.footer-top li{
+    padding: 0 12px;
+    position: relative;
+}
+.footer-top li::after{
+    content: "";
+    display: block;
+    width: 1px;
+    height: 30px;
+    background: #ccc;
+    position: absolute;
+    right: 0;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.footer-top li:last-child::after{
+    display: none;
+}
+.footer-bottom{
+    text-align: center;
+    margin: 20px 0;
+}
+.footer-center{
+    text-align: center;
+}
