@@ -58,21 +58,23 @@
         <div class="category-content">
             <div class="category-content-left">
                 <ul>
-                    <li class="category-left-li"><a href="#">NỮ</a>
+                    <li class="category-left-li"><a href="#">Size</a>
                         <ul>
-                            <li><a href="">HÀNG NỮ MỚI VỀ</a></li>
-                            <li><a href="">BEYOND TRENDY</a></li>
-                            <li><a href="">QUẦN JEAN NỮ</a></li>
+                            <span>S</span>
+                            <span>M</span>
+                            <span>L</span>
+                            <span>XL</span>
+                            <span>XXL</span>
                         </ul>
                     </li>
-                    <li class="category-content-left-li"><a href="#">NAM</a>
+                    <li class="category-content-left-li"><a href="#">Màu sắc</a>
                         <ul>
                             <li><a href="">HÀNG NAM MỚI VỀ</a></li>
                             <li><a href="">BEYOND TRENDY</a></li>
                             <li><a href="">QUẦN JEANS NAM</a></li>
                         </ul>
                     </li>
-                    <li class="category-content-left-li"><a href="">TRẺ EM</a>
+                    <li class="category-content-left-li"><a href="">Mức giá</a>
                         <ul>
                             <li><a href="">HÀNG TRẺ EM MỚI VỀ</a></li>
                             <li><a href="">ÁO CHO BÉ</a></li>
@@ -80,11 +82,13 @@
                         </ul>
                     </li>
 
-                    <li class="category-content-left-li"><a href="">BỘ SƯU TẬP</a>
+                    <li class="category-content-left-li"><a href="">Mức chiết khấu</a>
                         <ul>
                             <li><a href="">HÀNG MỚI VỀ</a></li>
                             <li><a href="">BỘ SƯU TẬP XUÂN HÈ 2023</a></li>
                         </ul>
+                    </li>
+                    <li class="category-content-left-li"><a href="">Nâng cao</a>
                     </li>
                 </ul>
             </div>
@@ -96,7 +100,11 @@
                     <div class="category-content-right-top-item">
                         <button><span>Bộ lọc</span><i class="fas fa-sort-down"></i></button>
                         <select name="" id="">
-                            <option value="">Sắp xếp</option>
+                            <option value="">Sắp xếp theo</option>
+                            <option value="">Mặc định</option>
+                            <option value="">Mới nhất</option>
+                            <option value="">Được mua nhiều nhất</option>
+                            <option value="">Được yêu thích nhất</option>
                             <option value="">Giá cao đến thấp</option>
                             <option value="">Giá thấp đến cao</option>
                         </select>
@@ -104,22 +112,55 @@
                 </div>
                 <div class="category-content-right-center">
                     <div class="category-content-right-center-item"> 
-                        <img src="sp1.jpg" alt="" />
+                        <img id="img" onclick="changeImage()" src="sp1.jpg" alt="" />
                         <h2>ĐẦM MAXI TAY HẾN</h2>
                         <p>1.790.000<sup>đ</sup></p>
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
+                        <script>
+                            var index =1;
+                            function changeImage(){
+                                var imgs = ["sp1.jpg","sp1.1.jpg","sp1.2.jpg"];
+                                document.getElementById('img').src =imgs[index];
+                                index++;
+                                if(index==3){
+                                    index=0;
+                                }
+                            }
+                        </script>
                     </div>
                     <div class="category-content-right-center-item">
-                        <img src="sp2.jpg" alt="" />
+                        <img id="img2" onclick="changeImage2()"src="sp2.jpg" alt="" />
                         <h2>ĐẦM HAI DÂY TENCEL DÁNG MAXI</h2>
                         <p>1.990.000<sup>đ</sup></p>
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
+                        <script>
+                            var index =1;
+                            function changeImage2(){
+                                var imgs = ["sp2.jpg","sp2.1.jpg"];
+                                document.getElementById('img2').src =imgs[index];
+                                index++;
+                                if(index==2){
+                                    index=0;
+                                }
+                            }
+                        </script>
                     </div>
                     <div class="category-content-right-center-item">
-                        <img src="sp3.jpg" alt="" />
+                        <img id="img3" onclick="changeImage3()"src="sp3.jpg" alt="" />
                         <h2>ĐẦM LỤA LỆCH VAI</h2>
                         <p>2.890.000<sup>đ</sup></p>
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
+                        <script>
+                            var index =1;
+                            function changeImage3(){
+                                var imgs = ["sp3.jpg","sp3.1.jpg"];
+                                document.getElementById('img3').src =imgs[index];
+                                index++;
+                                if(index==2){
+                                    index=0;
+                                }
+                            }
+                        </script>
                     </div>
                     <div class="category-content-right-center-item">
                         <img src="sp4.jpg" alt="" />
@@ -128,43 +169,79 @@
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
                     </div>
                     <div class="category-content-right-center-item">
-                        <img src="sp5.jpg" alt="" />
+                        <img id="img5" onclick="changeImage5()"src="sp5.jpg" alt="" />
                         <h2>SET ÁO BLAZER VÀ QUẦN SUÔNG DÀI</h2>
                         <p>2.590.000<sup>đ</sup></p>
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
+                        <script>
+                            var index =1;
+                            function changeImage5(){
+                                var imgs = ["sp5.jpg","sp5.1.jpg"];
+                                document.getElementById('img5').src =imgs[index];
+                                index++;
+                                if(index==2){
+                                    index=0;
+                                }
+                            }
+                        </script>
                     </div>
                     <div class="category-content-right-center-item">
-                        <img src="sp6.jpg" alt="" />
+                        <img id="img6" onclick="changeImage6()"src="sp6.jpg" alt="" />
                         <h2>ĐẦM CUT-OUT HỌA TIẾT KẺ</h2>
                         <p>2.190.000<sup>đ</sup></p>
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
+                        <script>
+                            var index =1;
+                            function changeImage6(){
+                                var imgs = ["sp6.jpg","sp6.1.jpg"];
+                                document.getElementById('img6').src =imgs[index];
+                                index++;
+                                if(index==2){
+                                    index=0;
+                                }
+                            }
+                        </script>
                     </div>
                     <div class="category-content-right-center-item">
-                        <img src="sp8.jpg" alt="" />
+                        <img id="img8" onclick="changeImage8()"src="sp8.jpg" alt="" />
                         <h2>ĐẦM QUÂY NGỰC ĐÍNH KHUY</h2>
                         <p>1.320.000<sup>đ</sup></p>
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
+                        <script>
+                            var index =1;
+                            function changeImage8(){
+                                var imgs = ["sp8.jpg","sp8.1.jpg","sp8.2.jpg"];
+                                document.getElementById('img8').src =imgs[index];
+                                index++;
+                                if(index==3){
+                                    index=0;
+                                }
+                            }
+                        </script>
                     </div>
                     <div class="category-content-right-center-item">
-                        <img src="sp9.jpg" alt="" />
+                        <img id="img9" onclick="changeImage9()"src="sp9.jpg" alt="" />
                         <h2>ĐẦM CHIFFON CỔ V</h2>
                         <p>1.250.000<sup>đ</sup></p>
                         <li>Them vao gio hang<a class="fa fa-shopping-bag" href=""></a></li>
-                    </div>
-                </div>
-                <div class="category-content-right-bottom">
-                    <div class="category-content-right-bottom-items 1">
-                        <p>Hiển thị 2 <span>|</span> 4 sản phẩm</p>
-                    </div>
-                    <div class="category-content-right-bottom-items 2">
-                        <p><span>&#171;</span>1 2 3 4<span>&#187;</span>Trang cuối</p>
+                        <script>
+                            var index =1;
+                            function changeImage9(){
+                                var imgs = ["sp9.jpg","sp9.1.jpg"];
+                                document.getElementById('img9').src =imgs[index];
+                                index++;
+                                if(index==2){
+                                    index=0;
+                                }
+                            }
+                        </script>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 <!-- --------------footer------------------>
-<div class="footer-top">
+  <div class="footer-top">
     <li><a href="index.html"><img src="https://pubcdn.ivymoda.com/ivy2/images/logo-footer.png" alt=""></a></li>
     <li><a href="http://online.gov.vn/Home/WebDetails/36596"><img src="https://pubcdn.ivymoda.com/ivy2/images/img-congthuong.png" alt=""></a></li>
     <li><a href="">Liên hệ</a></li>
