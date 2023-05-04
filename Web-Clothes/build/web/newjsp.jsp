@@ -1,11 +1,10 @@
 <%-- 
-    Document   : success
-    Created on : 30-04-2023, 11:26:30
+    Document   : newjsp
+    Created on : 30-04-2023, 11:26:15
     Author     : Admin
 --%>
 
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
-<%@taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core"%>
 <!DOCTYPE html>
 <html>
     <head>
@@ -13,6 +12,6 @@
         <title>JSP Page</title>
     </head>
     <body>
-        
+        <h1>Hello World!</h1>
     </body>
 </html>

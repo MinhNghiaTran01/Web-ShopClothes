@@ -138,7 +138,7 @@ header:hover{
     float: left;
 }
 .category-content-right-top-item{
-    width: 100%; 
+    width: 60%; 
     display: inline;
 }
 .category-content-right-top-item button {
@@ -198,16 +198,7 @@ header:hover{
     margin: 20px 0 20px;
     width: 100%;
 }
-.category-content-right-bottom-items p{
-    font-family: var(--main-text-font);
-    font-size: 12px;
-    float: left;
-}
-.category-content-right-bottom-items  p{
-    font-family: var(--main-text-font);
-    font-size: 12px;
-    float: right;
-}
+
 /* --------------footer----------------- */
 footer{
     text-align: center;

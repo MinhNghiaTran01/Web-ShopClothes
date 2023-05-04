@@ -85,39 +85,46 @@
                         </li>
                     </ul>
                 </div>
-                 <c:set var="x"  value= "${requestScope.dmsp}" />
-                 
-                <div class="category-content-right">
-                            <div class="category-content-right-top" style="display: flex;">
-                                <div class="category-content-right-top p">
-                                    <p>${x.tenLoaiSanPham}</p>
+
+                <div class="category-right">
+                            <div class="category-right-top" style="display: flex;">
+                                <div class="category-right-top-item">
+                                    <p>Kết quả tìm kiếm ${sanphamtimkiem}</p>
                                 </div>
 
                                 <div class="category-right-top-item">
-                                    <button style="width:100px; height: 50px" > <span style="width:100px">Bộ lọc</span><i class="fas fa-sort-down"></i></button>
+                                    <button><span>Bộ lọc</span><i class="fas fa-sort-down"></i></button>
                                 </div>
 
-                                <div class="category-content-right-top-item">
-                                    <form name="myForm" action="sapxep">
-                                        <select style="width:200px; " name="sapxeptheo" onchange="myForm.submit()">
+                                <div class="category-right-top-item">
+                                    <<form name="myForm" action="timkiem_sapxep">
+                                        <select name="sapxeptheo" onchange="myForm.submit()">
                                               <option value="tucaodenthap">Giá cao đến thấp</option>
                                               <option value="tuthapdencao">Giá thấp đến cao</option>
                                          </select>
-                                        <input type="hidden" name="idDanhMucSanPham" value="${x.idDanhMucSanPham}">
+                                        <input type="hidden" name="sanphamtimkiem" value="${sanphamtimkiem}">
                                      </form>
                                 </div>
                             </div>
-                                     
-                             <div class="category-content-right-center">
-                                <c:forEach items="${listP}" var="o">
-                                    <div class="category-content-right-center-item">
-                                        <a href="detail?idSanPham=${o.idSanPham}"><img src="${o.img}" alt=""></a>
-                                        <a href="detail?idSanPham=${o.idSanPham}"><h2>${o.title}</h2></a>
-                                        <p>${o.giaBan}<sup>đ</sup></p>
-                                        <li>Them vao gio hang<a class="fa fa-shopping-bag" href="giohang?idSanPham=${o.idSanPham}"></a></li>
+                            <c:choose>
+                                <c:when test="${not empty listP and listP.size() > 0}">
+                                    <div class="category-right-content">
+                                        <c:forEach items="${listP}" var="o">
+                                            <div class="category-right-content-item">
+                                                <a href="detail?idSanPham=${o.idSanPham}"><img src="${o.img}" alt=""></a>
+                                                <a href="detail?idSanPham=${o.idSanPham}"><h2>${o.title}</h2></a>
+                                                <p>${o.giaBan}<sup>đ</sup></p>
+                                                <a href="giohang?idSanPham=${o.idSanPham}">thêm vào giỏ hàng</a>
+                                            </div>
+                                        </c:forEach>
                                     </div>
-                                </c:forEach>
-                            </div>
+                                </c:when>
+                                <c:otherwise>
+                                    <div class="category-right-content">
+                                        <h1>Không có sản phẩm nào phù hợp</h1>
+                                    </div>
+                                </c:otherwise>
+                            </c:choose>
 
                             <div class="category-right-bottom">
                                 <div class="category-right-bottom-items">
@@ -137,9 +144,8 @@
                menu.classList.toggle("block");
            })
         })
-      
     </script>
-  <%--<%@include file="footer.jsp" %>--%>
+  <%@include file="footer.jsp" %>
 
 </body>
 

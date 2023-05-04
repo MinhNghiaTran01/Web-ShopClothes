@@ -5,14 +5,12 @@
 
 package controller;
 
-import entity.sanpham;
 import dao.DAO;
 import entity.danhmucsanpham;
-import entity.kichco;
-import entity.mau;
-import entity.productimage;
+import entity.sanpham;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.Comparator;
 import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
@@ -24,8 +22,8 @@ import javax.servlet.http.HttpServletResponse;
  *
  * @author Admin
  */
-@WebServlet(name="detail", urlPatterns={"/detail"})
-public class detail extends HttpServlet {
+@WebServlet(name="sapxep", urlPatterns={"/sapxep"})
+public class sapxep extends HttpServlet {
    
     /** 
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code> methods.
@@ -37,30 +35,56 @@ public class detail extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
-        String idSanPham =  request.getParameter("idSanPham") ;
+        String idDanhMucSanPham =  request.getParameter("idDanhMucSanPham");
+        String sapxeptheo = request.getParameter("sapxeptheo");
+       
+        
         DAO DAO = new DAO();
         
+        List<sanpham> listP = DAO.getAllProductByID(idDanhMucSanPham);
+        danhmucsanpham dmsp = DAO.getDanhMucSanPhamByID(idDanhMucSanPham);
         
-        List<productimage> listPimg = DAO.getProductImageByID(idSanPham);
         List<danhmucsanpham> list_menu_nu = DAO.getAllDanhMucSanPham();
         List<danhmucsanpham> list_menu_nam = list_menu_nu;
         List<danhmucsanpham> list_menu_treEm = list_menu_nu;
         List<danhmucsanpham> list_menu_boSuuTap = list_menu_nu;
-        sanpham p = DAO.getProductByID(idSanPham);
-        kichco kichCo = DAO.getKichCoByID(idSanPham);
-        mau mau = DAO.getMauByID(p.getIdMau());
-        
+    
         request.setAttribute("listPNu", list_menu_nu);
         request.setAttribute("listPNam", list_menu_nam);
         request.setAttribute("listPTreEm", list_menu_treEm);
         request.setAttribute("listPboSuuTap", list_menu_boSuuTap);
         
-        request.setAttribute("detailP", p);
-        request.setAttribute("listPimg", listPimg);
-        request.setAttribute("kichCo", kichCo);
-        request.setAttribute("mau", mau);
+        if(sapxeptheo.equals("tucaodenthap")){
+            listP.sort(new Comparator<sanpham>(){
+                @Override
+                public int compare(sanpham o1, sanpham o2) {
+                    if(o1.getGiaBan() > o2.getGiaBan()) {
+                        return -1;
+                    } else if(o1.getGiaBan() < o2.getGiaBan()) {
+                        return 1;
+                    }
+                    return 0;
+                }
+            });
+        }
+        else if(sapxeptheo.equals("tuthapdencao")){
+            listP.sort(new Comparator<sanpham>(){
+                @Override
+                public int compare(sanpham o1, sanpham o2) {
+                    if(o1.getGiaBan() > o2.getGiaBan()) {
+                        return 1;
+                    } else if(o1.getGiaBan() < o2.getGiaBan()) {
+                        return -1;
+                    }
+                    return 0;
+                }
+            });
+        }
         
-        request.getRequestDispatcher("trangsanpham.jsp").forward(request, response);
+        
+        request.setAttribute("listP", listP);
+        request.setAttribute("dmsp", dmsp);
+        request.getRequestDispatcher("giaodientrangmucsp.jsp").forward(request, response);
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

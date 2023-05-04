@@ -52,17 +52,20 @@ public class themvaogiohang extends HttpServlet {
         
         List<productimage> listPimg = DAO.getProductImageByID(idSanPham);
         List<danhmucsanpham> list_menu_nu = DAO.getAllDanhMucSanPham();
-        List<danhmucsanpham> list_menu_nam = DAO.getAllDanhMucSanPham();
-        List<danhmucsanpham> list_menu_treEm = DAO.getAllDanhMucSanPham();
-        List<danhmucsanpham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
-        sanpham p = DAO.getProductByID(idSanPham);
-        kichco kichCo = DAO.getKichCoByID(idSanPham);
-        mau mau = DAO.getMauByID(p.getIdMau());
+        List<danhmucsanpham> list_menu_nam = list_menu_nu;
+        List<danhmucsanpham> list_menu_treEm = list_menu_nu;
+        List<danhmucsanpham> list_menu_boSuuTap = list_menu_nu;
+       
         
         request.setAttribute("listPNu", list_menu_nu);
         request.setAttribute("listPNam", list_menu_nam);
         request.setAttribute("listPTreEm", list_menu_treEm);
         request.setAttribute("listPboSuuTap", list_menu_boSuuTap);
+        
+        sanpham p = DAO.getProductByID(idSanPham);
+        kichco kichCo = DAO.getKichCoByID(idSanPham);
+        mau mau = DAO.getMauByID(p.getIdMau());
+        
         
         request.setAttribute("detailP", p);
         request.setAttribute("listPimg", listPimg);
@@ -73,7 +76,7 @@ public class themvaogiohang extends HttpServlet {
             String sdtKhachHang = (String) obj;
             DAO.InsertGioHangByID( sdtKhachHang, idSanPham,Integer.parseInt(soLuong) );
 //            response.sendRedirect("trangsanpham.jsp");
-            request.getRequestDispatcher("trangsanpham.jsp").forward(request, response);
+            request.getRequestDispatcher("success.jsp").forward(request, response);
         }
         else{
             Cookie[] carr = request.getCookies();
@@ -122,6 +125,7 @@ public class themvaogiohang extends HttpServlet {
     protected void doPost(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         processRequest(request, response);
+        
     }
 
     /** 

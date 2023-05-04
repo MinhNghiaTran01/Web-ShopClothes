@@ -74,7 +74,7 @@
                             </div>
                             <p style="color:red;">Vui lòng chọn size</p>
                             <div class="product-content-right-product-button">
-                                <button onclick=buy("${o.idSanPham}") ><i class="fas fa-shopping-cart"></i><p>MUA HÀNG</p></button>
+                            <button onclick= buy("${o.idSanPham}")><i class="fas fa-shopping-cart"></i><p>MUA HÀNG</p></button>
                               <button><p>TÌM TẠI CỬA HÀNG</p></button>
                             </div>
                             <div class="product-content-right-product-icon">
@@ -98,9 +98,7 @@
                 </div>
       </section>
     </form>
-</body>
-    <!-- --------------footer------------------>
-    <%@include file="footer.jsp" %>
+                              
     <script>
         function buy(idSanPham){
             var soLuong = document.f.soLuong.value;
@@ -108,4 +106,8 @@
             document.f.submit();
         }
     </script>
+</body>
+    <!-- --------------footer------------------>
+    <%--<%@include file="footer.jsp" %>--%>
+    
 </html>

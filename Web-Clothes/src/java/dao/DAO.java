@@ -80,11 +80,54 @@ public class DAO {
     public List<sanpham> getAllProductByID(String iddanhmucsanpham){
         List<sanpham> list = new ArrayList<>();
         try {
-            String query = "select * from sanpham " + " where iddanhmucsanpham = ? ";
+            String query = "select * from sanpham " + " where idDanhMucSanPham = ? ";
 
             conn = new DBContext().getConnection();
             ps = conn.prepareStatement(query);
             ps.setString(1, iddanhmucsanpham);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                list.add(  new sanpham( rs.getString(1), rs.getString(2), rs.getString(3), 
+                        rs.getString(4), rs.getString(5) , rs.getFloat(6) , rs.getFloat(7),
+                        rs.getString(8) , rs.getString(9) ) );
+            }
+            
+            
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return list;
+    }
+    
+    public List<sanpham> getAllProductByNameSanPham(String namesanpham){
+        List<sanpham> list = new ArrayList<>();
+        try {
+            String query = "select * from sanpham " + " where title = ? ";
+
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
+            ps.setString(1, namesanpham);
+            rs = ps.executeQuery();
+            while(rs.next()){
+                list.add(  new sanpham( rs.getString(1), rs.getString(2), rs.getString(3), 
+                        rs.getString(4), rs.getString(5) , rs.getFloat(6) , rs.getFloat(7),
+                        rs.getString(8) , rs.getString(9) ) );
+            }
+            
+            
+        } catch (Exception e) {
+            System.out.println(e);
+        }
+        return list;
+    }
+    
+    public List<sanpham> getAllProduct(){
+        List<sanpham> list = new ArrayList<>();
+        try {
+            String query = "select * from sanpham ";
+
+            conn = new DBContext().getConnection();
+            ps = conn.prepareStatement(query);
             rs = ps.executeQuery();
             while(rs.next()){
                 list.add(  new sanpham( rs.getString(1), rs.getString(2), rs.getString(3), 

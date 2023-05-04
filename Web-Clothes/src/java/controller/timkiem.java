@@ -5,8 +5,13 @@
 
 package controller;
 
+import dao.DAO;
+import entity.danhmucsanpham;
+import entity.sanpham;
 import java.io.IOException;
 import java.io.PrintWriter;
+import java.util.ArrayList;
+import java.util.List;
 import javax.servlet.ServletException;
 import javax.servlet.annotation.WebServlet;
 import javax.servlet.http.HttpServlet;
@@ -30,7 +35,29 @@ public class timkiem extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
     throws ServletException, IOException {
         response.setContentType("text/html;charset=UTF-8");
+        String sanphamtimkiem = request.getParameter("sanphamtimkiem");
+        DAO DAO = new DAO();
         
+        List<sanpham> list = DAO.getAllProduct();
+        List<sanpham> listP = new ArrayList<>();
+        for(sanpham p:list){
+            String productName = p.getTitle(); // chuyển tên sản phẩm sang chữ thường
+            if (productName.contains(sanphamtimkiem.toUpperCase())||productName.contains(sanphamtimkiem.toLowerCase())) {
+                listP.add(p);
+            }
+        }
+        List<danhmucsanpham> list_menu_nu = DAO.getAllDanhMucSanPham();
+        List<danhmucsanpham> list_menu_nam = list_menu_nu;
+        List<danhmucsanpham> list_menu_treEm = list_menu_nu;
+        List<danhmucsanpham> list_menu_boSuuTap = list_menu_nu;
+    
+        request.setAttribute("listPNu", list_menu_nu);
+        request.setAttribute("listPNam", list_menu_nam);
+        request.setAttribute("listPTreEm", list_menu_treEm);
+        request.setAttribute("listPboSuuTap", list_menu_boSuuTap);
+        request.setAttribute("listP", listP);
+        request.setAttribute("sanphamtimkiem", sanphamtimkiem);
+        request.getRequestDispatcher("timkiemsanpham.jsp").forward(request, response);
     } 
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

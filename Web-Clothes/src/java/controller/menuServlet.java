@@ -34,9 +34,9 @@ public class menuServlet extends HttpServlet {
         
         DAO DAO = new DAO();
         List<danhmucsanpham> list_menu_nu = DAO.getAllDanhMucSanPham();
-        List<danhmucsanpham> list_menu_nam = DAO.getAllDanhMucSanPham();
-        List<danhmucsanpham> list_menu_treEm = DAO.getAllDanhMucSanPham();
-        List<danhmucsanpham> list_menu_boSuuTap = DAO.getAllDanhMucSanPham();
+        List<danhmucsanpham> list_menu_nam = list_menu_nu;
+        List<danhmucsanpham> list_menu_treEm = list_menu_nu;
+        List<danhmucsanpham> list_menu_boSuuTap = list_menu_nu;
        
         
         request.setAttribute("listPNu", list_menu_nu);

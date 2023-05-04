@@ -224,9 +224,11 @@
             <img src="https://pubcdn.ivymoda.com/ivy2/images/logo.png" alt="ảnh lỗi"/>
         </div>
         <div class="orthers">
-            <li><input type="text" name="timkiem" placeholder="Tìm kiếm sản phẩm"> <i class="fas fa-search"> </i></li>
+            <form name="f" action="">
+                <li><input id="keyword" type="text" name="sanphamtimkiem" placeholder="Tìm kiếm sản phẩm"> <i class="fas fa-search"> </i></li>
+            </form>
             <li><a class="fa fa-paw" href=""></a></li>
-            <li><a class="fa fa-user" href="login.jsp"></a></li>
+            <li><a class="fa fa-user" href="login_start"></a></li>
             <li><a class="fa fa-shopping-bag" href="giohang"></a></li>
             <a href="login.jsp">dang xuat</a>
         </div>
@@ -240,9 +242,8 @@
     if (event.keyCode === 13) {
         // ngăn chặn việc gửi form
         event.preventDefault();
-        
-        // thực hiện chức năng tìm kiếm sản phẩm ở đây
-        ...
+        document.f.action = "timkiem";
+        document.f.submit();
         }
     });
 

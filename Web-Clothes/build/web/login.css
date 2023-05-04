@@ -1,5 +1,5 @@
 .noidung {
-  height:600px ;
+  height:500px ;
   width:600px ;
   font-size: large;
   font-style: normal;
@@ -11,6 +11,9 @@
 }
 .nd1{
   margin-left: 100px;
+}
+.container{
+    top: 300px;
 }
 .header{
   text-align: center;
