@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="Web-ClothesPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>context.Khachhang</class>
+    <class>context.Danhsachhoadon</class>
+    <class>context.Dathang</class>
+    <class>context.Giohang</class>
+    <class>context.Kichco</class>
+    <class>context.Chitiethoadon</class>
+    <class>context.Account</class>
+    <class>context.Chucvu</class>
+    <class>context.Mau</class>
+    <class>context.Danhmucsanpham</class>
+    <class>context.Sanpham</class>
+    <class>context.Nhanvien</class>
+    <class>serviceAPI.Giohang</class>
+    <class>serviceAPI.Danhsachhoadon</class>
+    <class>serviceAPI.Kichco</class>
+    <class>serviceAPI.Danhmucsanpham</class>
+    <class>serviceAPI.Nhanvien</class>
+    <class>serviceAPI.Dathang</class>
+    <class>serviceAPI.Chucvu</class>
+    <class>serviceAPI.Chitiethoadon</class>
+    <class>serviceAPI.Khachhang</class>
+    <class>serviceAPI.Mau</class>
+    <class>serviceAPI.Sanpham</class>
+    <class>serviceAPI.Account</class>
+    <class>service.Dathang</class>
+    <class>service.Chitiethoadon</class>
+    <class>service.Danhmucsanpham</class>
+    <class>service.Chucvu</class>
+    <class>service.Danhsachhoadon</class>
+    <class>service.Giohang</class>
+    <class>service.Nhanvien</class>
+    <class>service.Mau</class>
+    <class>service.Khachhang</class>
+    <class>service.Kichco</class>
+    <class>service.Sanpham</class>
+    <class>service.Account</class>
+    <exclude-unlisted-classes>false</exclude-unlisted-classes>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:mysql://us-cdbr-east-06.cleardb.net:3306/heroku_66eceb5b3cb2b5b?zeroDateTimeBehavior=CONVERT_TO_NULL"/>
+      <property name="javax.persistence.jdbc.user" value="be588ed25e0b60"/>
+      <property name="javax.persistence.jdbc.driver" value="com.mysql.cj.jdbc.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="618973a9"/>
+    </properties>
+  </persistence-unit>
+</persistence>
